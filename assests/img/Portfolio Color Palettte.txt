@@ -1,0 +1,5 @@
+Background - #2A304B
+
+Button - #4463EF
+
+Logo - #4463EF

@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .yasanga {
+    order: 1;
+  }
+  
+  .navigation {
+    display: flex;
+    list-style: none;
+    order: 2;
+  }
+  
+  .navigation li {
+    margin-right: 10px;
+  }
+  
+  .navigation li:last-child {
+    margin-right: 0;
+  }
