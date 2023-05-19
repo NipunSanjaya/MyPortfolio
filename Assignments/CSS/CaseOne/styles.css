@@ -1,0 +1,454 @@
+#main {
+    position: relative;
+    height: 100vh;
+    width: 98.86vw;
+}
+#one {
+    width: 50%;
+    height: 50vh;
+    background-color: red;
+    position: relative;
+}
+#two {
+    width: 50%;
+    height: 50vh;
+    background-color: green;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#three {
+    width: 50%;
+    height: 50vh;
+    background-color: orange;
+
+    position: relative;
+}
+#four {
+    width: 50%;
+    height: 50vh;
+    background-color: deeppink;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+#last {
+    background-color: azure;
+    width: 200px;
+    height: 250px;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+    margin: auto;
+}
+
+#last > div {
+    background-color: red;
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+#one > section {
+    background-color: azure;
+    border-radius: 100%;
+    width: 250px;
+    height: 250px;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+#two > section {
+    background-color: azure;
+    border-radius: 100%;
+    width: 250px;
+    height: 250px;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+#four > section {
+    background-color: azure;
+    border-radius: 100%;
+    width: 250px;
+    height: 250px;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+#three > section {
+    display: inline-block;
+    background-color: azure;
+    border-radius: 100%;
+    width: 250px;
+    height: 250px;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+#one > section > div {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+#two > section > div {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+#three > section > div {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+#four > section > div {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+#s1 {
+    z-index: 1;
+    background-color: azure;
+    border-bottom-right-radius: 100%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#s2 {
+    background-color: azure;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#s3 {
+    background-color: azure;
+    border-bottom-left-radius: 100%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#s4 {
+    background-color: azure;
+    border-top-left-radius: 100%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+#s5 {
+    background-color: azure;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#s6 {
+    background-color: azure;
+    border-top-right-radius: 100%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+#main2 {
+    position: relative;
+    height: 100vh;
+    width: 98.86vw;
+}
+#one2 {
+    width: 50%;
+    height: 50vh;
+    background-color: red;
+    position: relative;
+}
+#two2 {
+    width: 50%;
+    height: 50vh;
+    background-color: green;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#three2 {
+    width: 50%;
+    height: 50vh;
+    background-color: orange;
+
+    position: relative;
+}
+#four2 {
+    width: 50%;
+    height: 50vh;
+    background-color: deeppink;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+#last2 {
+    background-color: azure;
+    width: 200px;
+    height: 250px;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+    margin: auto;
+}
+
+#last2 > div {
+    background-color: red;
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+#one2 > section {
+    background-color: azure;
+    border-radius: 100%;
+    width: 250px;
+    height: 250px;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+#two2 > section {
+    background-color: azure;
+    border-radius: 100%;
+    width: 250px;
+    height: 250px;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+#four2 > section {
+    background-color: azure;
+    border-radius: 100%;
+    width: 250px;
+    height: 250px;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+#three2 > section {
+    display: inline-block;
+    background-color: azure;
+    border-radius: 100%;
+    width: 250px;
+    height: 250px;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+#one2 > section > div {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+#two2 > section > div {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+#three2 > section > div {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+#four2 > section > div {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+#s12 {
+    z-index: 1;
+    background-color: azure;
+    border-bottom-right-radius: 100%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#s22 {
+    background-color: azure;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#s32 {
+    background-color: azure;
+    border-bottom-left-radius: 100%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#s42 {
+    background-color: azure;
+    border-top-left-radius: 100%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+#s52 {
+    background-color: azure;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#s62 {
+    background-color: azure;
+    border-top-right-radius: 100%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}

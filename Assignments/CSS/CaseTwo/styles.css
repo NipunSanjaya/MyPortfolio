@@ -1,0 +1,104 @@
+body>header{
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    box-shadow: 1px 2px 3px 2px black;
+    z-index: 1;
+    top: 0;
+}
+
+header>aside>img{
+    width: 180px;
+    margin: 20px;
+}
+
+header>nav>ul{
+    position: absolute;
+    margin-top: 25px;
+    margin-right: 40px;
+    right: 0;
+    top: 0;
+}
+
+header>nav>ul>li{
+    display: inline-block;
+    margin: 5px;
+}
+
+body>main{
+    position: relative;
+    margin-top: 90px;
+}
+
+main>nav{
+    position: absolute;
+    background-color: blueviolet;
+    width: 250px;
+    top: 5px;
+    bottom: -15px;
+}
+
+main>:nth-child(2){
+    position: relative;
+    top: 5px;
+    border: 1px solid black;
+    margin-left: 255px;
+    height: 300px;
+}
+
+main>section>div{
+    position: absolute;
+    margin-top: 5px;
+    width: calc(100%/3);
+    height: 100%;
+}
+
+main>section>:nth-child(1){
+    left: 0;
+}
+
+main>section>:nth-child(2){
+    left: calc(100%/3);
+}
+
+main>section>:nth-child(3){
+    right: 0;
+}
+
+main>:nth-child(3){
+    margin-left: 255px;
+}
+
+body>footer{
+    background-color: darkgray;
+    height: 60px;
+    position: relative;
+    z-index: 2;
+}
+
+footer>p{
+    text-align: center;
+    padding-top: 18px;
+    margin: 0;
+}
+
+main>nav>ul>li>a{
+    text-decoration: none;
+    color: #eeeeee;
+    font-size: 20px;
+    margin: 15px;
+}
+
+main>nav>ul>li{
+    list-style-type: none;
+    margin: 10px;
+}
+
+header>nav>ul>li>a{
+    text-decoration: none;
+}
+
+header>nav>ul>li>i{
+    margin: 8px;
+}
