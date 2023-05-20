@@ -1,0 +1,32 @@
+div {
+    position: relative;
+    height: 50px;
+    width: 300px;
+    background-color: #9445ef;
+    margin-left: 0;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    transition: 2s;
+    left: -250px;
+    box-shadow: black 2px 2px 7px -1px;
+}
+
+div > p {
+    position: absolute;
+    left: 50px;
+    top: 12px;
+    font-size: 20px;
+    margin: auto;
+}
+
+div:hover {
+    left: -6px;
+    transition: 2s;
+}
+
+i {
+    position: absolute;
+    right: 10px;
+    top: 25px;
+    font-size: 20px;
+}
