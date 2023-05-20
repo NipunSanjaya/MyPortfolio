@@ -1,0 +1,142 @@
+section {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+section > section {
+    width: 100vw;
+}
+
+section > section:last-child {
+    background: url("assets/sky.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+section > section:nth-child(2) {
+    position: absolute;
+    top: 0;
+    width: 400vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 1;
+    animation-name: animation_city_and_road;
+    animation-iteration-count: infinite;
+    animation-direction:initial ;
+    /*animation-delay: 0s;*/
+    animation-duration: 20s;
+}
+
+section > section:nth-child(2) > div {
+    width: 100vw;
+    height: 50%;
+    background: url("assets/city.png");
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+section > section:nth-child(3) {
+    position: absolute;
+    bottom: 0;
+    width: 400vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    z-index: 1;
+    animation-name: animation_city_and_road;
+    animation-iteration-count: infinite;
+    animation-direction:initial ;
+    animation-duration: 20s;
+
+}
+
+section > section:nth-child(3) > div {
+    width: 100vw;
+    height: 50%;
+    background: url("assets/road.jpg");
+    background-size: cover;
+}
+
+section > section:first-child {
+    position: absolute;
+    width: 100vw;
+    height: 50%;
+    bottom: 0;
+    z-index: 2;
+
+    /*background-color: #ff253a;*/
+}
+
+section > section:first-child > div:first-child {
+    background: url("assets/car.png");
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+    width: 350px;
+    position: absolute;
+    height: 140px;
+    top: 86px;
+    left: 0;
+    right: 0;
+}
+
+section > section:first-child > div > div:nth-child(1) {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    background: url("assets/wheel.png");
+    background-size: cover;
+    background-position: center;
+    z-index: 3;
+    top: 74px;
+    left: 30px;
+    animation-name: wheel;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+section > section:first-child > div > div:nth-child(2) {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    background: url("assets/wheel.png");
+    background-size: cover;
+    background-position: center;
+    top: 74px;
+    right: 41px;
+    animation-name: wheel;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes wheel {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animation_city_and_road {
+    0% {
+        transform: translate(0)
+    }
+    25% {
+        transform: translate(-25%)
+    }
+    75% {
+        transform: translate(-50%)
+    }
+    100% {
+        transform: translate(-75%)
+    }
+
+}
