@@ -273,5 +273,8 @@ header > nav > menu {
     left: 0px;
     top: 160px;
 }
+#box-2>p{
+    line-height: 30px;
+}
 
 
