@@ -121,7 +121,7 @@ header > nav > menu {
 #home_section> aside> img{
     position: absolute;
     width: 1350px;
-    height: 600px;
+    height: 610px;
     background-position: center 0px;
     opacity: 85%;
 }
@@ -201,4 +201,77 @@ header > nav > menu {
 
     color: #FFFFFF;
 }
+
+#about_section{
+    position: absolute;
+    width: 1350px;
+    height: 600px;
+    left: 0px;
+    top: 610px;
+
+    background: #2E2D32;
+}
+#about-img{
+    position: absolute;
+    width: 332px;
+    height: 487px;
+    left: 69px;
+    top: 100px;
+
+    background: linear-gradient(0deg, #000000, #000000), #000000;
+    border-radius: 26px;
+}
+#about-img-1{
+    position: absolute;
+    width: 332px;
+    height: 487px;
+    left: 23px;
+    top: -26px;
+
+    background: url(../../assets/img/portfolio/about-me.png), linear-gradient(0deg, rgba(184, 96, 96, 0.61), rgba(184, 96, 96, 0.61)), #000000;
+    border-radius: 20px;
+}
+#about-img-exp{
+    position: absolute;
+    width: 102px;
+    height: 127px;
+    left: 23px;
+    top: 141px;
+    text-align: center;
+
+    background: #DE2626;
+}
+#about_section>section{
+    position: absolute;
+    width: 893px;
+    height: 600px;
+    left: 457px;
+    top: 0px;
+
+}
+#box{
+    position: absolute;
+    width: 129px;
+    height: 10px;
+    left: 0px;
+    top: 80px;
+
+    background: #DF224F;
+}
+#box-1{
+    position: absolute;
+    width: 894px;
+    height: 50px;
+    left: 0px;
+    top: 83px;
+
+}
+#box-2{
+    position: absolute;
+    width: 894px;
+    height: 299px;
+    left: 0px;
+    top: 160px;
+}
+
 
