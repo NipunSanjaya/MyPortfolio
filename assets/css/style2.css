@@ -220,7 +220,7 @@ header > nav > menu {
     width: 1400px;
     height: 600px;
     left: 0px;
-    top: 610px;
+    top: 611px;
 
     background: #2E2D32;
 }
@@ -350,7 +350,7 @@ header > nav > menu {
     width: 1400px;
     height: 880px;
     left: 0px;
-    top: 1210px;
+    top: 1211px;
 
     background: #2E2D32;
 }
@@ -732,4 +732,37 @@ header > nav > menu {
 .skill-name{
     line-height: 0.5;
     color: black;
+}
+
+/*latest work*/
+#latest-work{
+    position: absolute;
+    width: 1400px;
+    height: 600px;
+    left: 0px;
+    top: 3700px;
+    background: #2E2D32;
+
+}
+#latest-work>div:nth-child(1) {
+    position: absolute;
+    width: 129px;
+    height: 10px;
+    left: 50px;
+    top: 80px;
+    background: #DF224F;
+}
+#latest-work>div:nth-child(2) {
+    position: absolute;
+    width: 300px;
+    height: 44px;
+    left: 50px;
+    top: 83px;
+}
+#latest-work>div:nth-child(3) {
+    position: absolute;
+    width: 1350px;
+    height: 400px;
+    left: 50px;
+    top: 220px;
 }
