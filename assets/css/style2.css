@@ -543,6 +543,193 @@ header > nav > menu {
     left: 50px;
     top: 167px;
 }
+#resume_section>div:nth-child(4) {
+    position: absolute;
+    width: 600px;
+    height: 390px;
+    left: 50px;
+    top: 300px;
+    background: #FFFFFF;
+    border-radius: 20px;
+}
+#resume_section>div:nth-child(5) {
+    position: absolute;
+    width: 600px;
+    height: 390px;
+    left: 730px;
+    top: 300px;
+    background: #FFFFFF;
+    border-radius: 20px;
+}
+#re-1>div{
+    position: absolute;
+    width: 138px;
+    height: 50px;
+    left: 40px;
+    top: 65px;
+    text-align: center;
+
+    background: #DF224F;
+    border-radius: 10px;
+}
+#re-1>div>h5{
+    position: absolute;
+    top: -25px;
+    left: 5px;
+}
+#res-box1-title{
+    position: absolute;
+    width: 420px;
+    height: 29px;
+    left: 40px;
+    top: 120px;
+
+    /*font-family: 'Inter';*/
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
 
 
+    color: #000000;
+}
+#res-box1-title-2{
+    position: absolute;
+    width: 450px;
+    height: 22px;
+    left: 40px;
+    top: 160px;
 
+    /*font-family: 'Inter';*/
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+
+    color: #AC450B;
+}
+#res-box1-para{
+    position: absolute;
+    width: 426px;
+    height: 72px;
+    left: 40px;
+    top: 250px;
+
+    /*font-family: 'Inter';*/
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #000000;
+}
+/**/
+#re-2>div{
+    position: absolute;
+    width: 138px;
+    height: 50px;
+    left: 40px;
+    top: 65px;
+    text-align: center;
+
+    background: #DF224F;
+    border-radius: 10px;
+}
+#re-2>div>h5{
+    position: absolute;
+    top: -25px;
+    left: 5px;
+}
+#res-box2-title{
+    position: absolute;
+    width: 450px;
+    height: 29px;
+    left: 40px;
+    top: 120px;
+
+    /*font-family: 'Inter';*/
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+
+
+    color: #000000;
+}
+#res-box2-title-2{
+    position: absolute;
+    width: 450px;
+    height: 22px;
+    left: 40px;
+    top: 160px;
+
+    /*font-family: 'Inter';*/
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+
+    color: #AC450B;
+}
+#res-box2-para{
+    position: absolute;
+    width: 426px;
+    height: 72px;
+    left: 40px;
+    top: 250px;
+
+    /*font-family: 'Inter';*/
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #000000;
+}
+
+/*counts*/
+
+.counts {
+    top: 2970px;
+    width: 1400px;
+    /*opacity: 80%;*/
+    padding: 1500px 0px;
+    background: url(../img/portfolio/cricles_background.jpg) center center / cover no-repeat fixed;
+}
+/*{box-sizing: border-box}*/
+
+.container {
+    width: 100%;
+    background-color: #ddd;
+}
+
+.skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+.java{width: 95%; background-color: #7804aa; height: 40px}
+.html {width: 80%; background-color: #04AA6D; height: 40px}
+.css {width: 88%; background-color: #2196F3; height: 40px}
+.js {width: 85%; background-color: #f44336; height: 40px}
+.web {width: 90%; background-color: #808080; height: 40px}
+
+#skills{
+    position: absolute;
+    width: 1200px;
+    height: 300px;
+    left: 70px;
+    top: 3000px;
+
+}
+.skill-name{
+    line-height: 0.5;
+    color: black;
+}
