@@ -738,11 +738,10 @@ header > nav > menu {
 #latest-work{
     position: absolute;
     width: 1400px;
-    height: 600px;
+    height: 1300px;
     left: 0px;
-    top: 3700px;
+    top: 3655px;
     background: #2E2D32;
-
 }
 #latest-work>div:nth-child(1) {
     position: absolute;
@@ -752,17 +751,153 @@ header > nav > menu {
     top: 80px;
     background: #DF224F;
 }
-#latest-work>div:nth-child(2) {
-    position: absolute;
-    width: 300px;
-    height: 44px;
+#my1Working{
+    height: 360px ;
+    width: 360px;
+    background: #799048;
+    position: relative;
     left: 50px;
-    top: 83px;
+    top: 240px;
+    text-align: center;
+    transition: transform 0.5s ease 0s;
 }
-#latest-work>div:nth-child(3) {
-    position: absolute;
-    width: 1350px;
-    height: 400px;
+#my1Working>h5{
+    height: 100px ;
+    width: 360px;
+    /*background: #799048;*/
+    position: relative;
+    left: 0px;
+    top: 370px;
+}
+
+#my2Working{
+    height: 360px;
+    width: 360px;
+    background: #D85E5E;
+    position: relative;
+    left: 480px;
+    top: -155px;
+    text-align: center;
+}
+#my2Working>h5{
+    position: relative;
+    top: 370px;
+    left: 0px;
+}
+
+#my3Working{
+    height: 360px;
+    width: 360px;
+    background: #2E7A9A;
+    position: relative;
+    left: 910px;
+    top: -550px;
+    text-align: center;
+}
+#my3Working>h5{
+    position: relative;
+    top: 370px;
+    left: 0px;
+}
+
+#my4Working{
+    height: 360px;
+    width: 360px;
+    background: #C4953C;
+    position: relative;
     left: 50px;
-    top: 220px;
+    top: -490px;
+    text-align: center;
+}
+#my4Working>h5{
+    position: relative;
+    top: 370px;
+    left: 0px;
+}
+
+#my5Working{
+    height: 360px;
+    width: 360px;
+    background: #B86060;
+    position: relative;
+    left: 480px;
+    top: -885px;
+    text-align: center;
+}
+#my5Working>h5{
+    position: relative;
+    top: 370px;
+    left: 0px;
+}
+
+#my6Working{
+    height: 360px;
+    width: 360px;
+    background: #3844B7;
+    position: relative;
+    left: 910px;
+    top: -1280px;
+    text-align: center;
+}
+#my6Working>h5{
+    position: relative;
+    top: 370px;
+    left: 0px;
+}
+#latest-work>div:nth-child(1)>h2{
+    width: 300px;
+}
+#project-area-padding{
+    top: 2970px;
+    width: 1400px;
+    /*opacity: 80%;*/
+    padding: 980px 0px;
+    background: url(../../Assignments/css/img/project-bg.jpg) center center / cover no-repeat fixed;
+}
+#project-area{
+    position: absolute;
+    width: 1400px;
+    height: 663px;
+    left: 0px;
+    top: 4955px;
+}
+#project-area>div{
+    position: absolute;
+    width: 129px;
+    height: 10px;
+    left: 50px;
+    top: 150px;
+    background: #DF224F;
+}
+#project-area>h2{
+    position: absolute;
+    width: 800px;
+    height: 10px;
+    left: 50px;
+    top: 200px;
+}
+#project-area>p{
+    position: absolute;
+    width: 800px;
+    height: 10px;
+    left: 50px;
+    top: 300px;
+}
+#project-area>a{
+    box-sizing: border-box;
+    position: absolute;
+    width: 172px;
+    height: 65px;
+    left: 50px;
+    top: 495px;
+    background: #DF224F;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
 }
