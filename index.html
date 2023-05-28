@@ -63,9 +63,10 @@
             <img src="assets/img/portfolio/coding%20img.jpg" alt="">
         </aside>
         <section>
-            <div>
+            <span id="autoTyping"></span>
+            <!--<div>
                 <h1 ><span>H</span>i, I’m <span>N</span>ipun</h1>
-            </div>
+            </div>-->
             <div>
                 <h4 >Full Stack Developer & Graphics Designer</h4>
             </div>
@@ -531,46 +532,80 @@
     <section id="contact_section">
         <div></div>
         <h2 class="title">Get In Touch</h2>
-        <form id="contact-form">
-            <div class="messages"></div>
-            <div>
-                <div>
-                    <div>
-                        <input id="form_name" class="form-control" type="text" name="name"
-                               placeholder="Name *" required="required">
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <input id="form_email" class="form-control" type="email" name="email"
-                               placeholder="Email *" required="required">
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <input id="form_number" class="form-control" type="text" name="number"
-                               placeholder="Phone" required>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <input id="form_subject" class="form-control" type="text" name="subject"
-                               placeholder="Subject">
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <textarea id="form_message" class="form-control" name="message"
-                                  placeholder="Message" rows="4" required="required"></textarea>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <button type="submit" class="y-button mt-5">MESSAGE ME</button>
-                    </div>
-                </div>
-            </div>
-        </form>
+
+        <div class="contact">
+            <form >
+
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+
+                <input type="email" id="email" name="email" placeholder="Your email..">
+
+
+                <input type="number" id="cont" name="contact" placeholder="Your contact number..">
+
+
+                <select id="country" name="country" placeholder="Your country..">
+                    <option value="australia">SriLanka</option>
+                    <option value="australia">India</option>
+                    <option value="australia">China</option>
+                    <option value="australia">German</option>
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                </select>
+
+
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+<!--        <div>-->
+<!--            <form id="contact-form">-->
+<!--                <div class="messages"></div>-->
+<!--                <div>-->
+<!--                    <div>-->
+<!--                        <div>-->
+<!--                            <input id="form_name" class="form-control" type="text" name="name"-->
+<!--                                   placeholder="Name *" required="required">-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div>-->
+<!--                        <div>-->
+<!--                            <input id="form_number" class="form-control" type="text" name="number"-->
+<!--                                   placeholder="Phone" required>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div>-->
+<!--                        <div>-->
+<!--                            <input id="form_email" class="form-control" type="email" name="email"-->
+<!--                                   placeholder="Email *" required="required">-->
+<!--                        </div>-->
+<!--                    </div>-->
+
+<!--                    <div>-->
+<!--                        <div>-->
+<!--                            <input id="form_subject" class="form-control" type="text" name="subject"-->
+<!--                                   placeholder="Subject">-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div>-->
+<!--                        <div>-->
+<!--                        <textarea id="form_message" class="form-control" name="message"-->
+<!--                                  placeholder="Message" rows="4" required="required"></textarea>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div>-->
+<!--                        <div>-->
+<!--                            <button type="submit" class="y-button mt-5">MESSAGE ME</button>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </form>-->
+<!--        </div>-->
+
         <div>
             <div id="map"></div>
         </div>
@@ -579,50 +614,69 @@
 </main>
 
 
-<footer class="footer">
-    <div>
-        <div class="footer_top">
+    <footer class="footer">
+        <div>
             <div>
-                <div>
-                    <div>
-                        <ul>
-                            <li><a href="#0">Terms & Conditions</a></li>
-                            <li><a href="#0">Privacy Policy</a></li>
-                            <li><a href="#0">License</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div>
-                    <div>
-                        <ul>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fa fa-github"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
+                <ul>
+                    <li><a href="#0">Terms & Conditions</a></li>
+                    <li><a href="#0">Privacy Policy</a></li>
+                    <li><a href="#0">License</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa fa-github"></i></a></li>
+                </ul>
             </div>
         </div>
 
         <div>
+            <div class="footer_top">
+                <div>
+                    <div>
+
+                    </div>
+
+                    <div>
+
+                    </div>
+                </div>
+            </div>
+
             <div>
                 <div>
                     <div>
-                        <p>  Designed & Developed By
-                            by <a>Nipun Sanjaya</a> <br>
-                            Copyright &copy;
-                        </p>
+                        <div>
+                            <p>  Designed & Developed By
+                                by <a>Nipun Sanjaya</a> <br>
+                                Copyright &copy;
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
+    <script src="https://kit.fontawesome.com/19027577b6.js" crossorigin="anonymous"></script>
 
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#autoTyping', {
+            strings: [
+                '<h1 ><span>H</span>i, I’m <span>N</span>ipun</h1>',
+                '<h4 >Full Stack Developer </h4>',
+                '<H4>  & Graphics Designer</h4>',
+                '<h1 ><span>H</span>i, I’m <span>N</span>ipun</h1>'
+            ],
+            typeSpeed: 100,
+        });
+    </script>
 
 </body>
 

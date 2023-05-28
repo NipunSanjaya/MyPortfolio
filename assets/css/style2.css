@@ -46,6 +46,7 @@ body {
     line-height: 1.6;
     letter-spacing: 0.08rem;
     font-weight: 400;
+
 }
 /*header > aside {*/
 /*    display: inline-block;*/
@@ -127,13 +128,23 @@ header > nav > menu {
     top: -23px;
 }
 
-
+#autoTyping{
+    font-size: 60px;
+    color: #ffffff;
+    z-index: 1;
+    position: relative;
+    top: -662px;
+    left: 80px;
+    text-align: center;
+}
 #home_section> aside> img{
     position: absolute;
     width: 1400px;
     height: 610px;
     background-position: center 0px;
     opacity: 85%;
+    z-index: 0;
+    position: relative;
 }
 #home_section{
     position: relative;
@@ -187,8 +198,8 @@ header > nav > menu {
     position: absolute;
     width: 150px;
     height: 65px;
-    left: 808px;
-    top: 411px;
+    left: 630px;
+    top: 361px;
 
     background: #DF224F;
     border: 1px solid #000000;
@@ -201,7 +212,7 @@ header > nav > menu {
     /*left: 778px;*/
     /*top: 383px;*/
 
-    font-family: 'Inter';
+    /*font-family: 'Inter';*/
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -851,7 +862,7 @@ header > nav > menu {
     top: 2970px;
     width: 1400px;
     /*opacity: 80%;*/
-    padding: 980px 0px;
+    padding: 705px 0px;
     background: url(../../Assignments/css/img/project-bg.jpg) center center / cover no-repeat fixed;
 }
 #project-area{
@@ -908,6 +919,7 @@ header > nav > menu {
     height: 1640px;
     left: 0px;
     top: 5660px;
+    bbackground: #1E1E1E;
 }
 #my-vlog-section>div{
     position: absolute;
@@ -1010,7 +1022,7 @@ header > nav > menu {
     left: 0px;
     top: 7280px;
 }
-#contact_section>div{
+#contact_section>div:nth-child(1){
     position: absolute;
     width: 129px;
     height: 10px;
@@ -1025,13 +1037,88 @@ header > nav > menu {
     left: 50px;
     top: 85px;
 }
-#contact-form{
+.contact{
     position: absolute;
     width: 800px;
     height: 600px;
     left: 50px;
     top: 225px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+
 }
+
+/** {box-sizing: border-box;}*/
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+
+}
+input[type=email] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type=number] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+
+input[type=submit] {
+    background-color: #DF224F;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    position: absolute;
+    left: 340px;
+    top: 558px;
+}
+
+input[type=submit]:hover {
+    background-color: #000000;
+}
+#country{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+#subject{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
 
 /*footer*/
 
