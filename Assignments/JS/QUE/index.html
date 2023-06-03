@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Que</title>
-    <link rel="stylesheet" href="assets/css/bootstrap-reboot.min.css">
     <style>
         section {
             width: 1000px;
@@ -36,41 +35,24 @@
 <body>
 
 <section>
-    <div></div><!-- red -->
-    <div></div> <!-- yellow -->
-    <div></div><!-- green -->
-    <div></div><!-- blue -->
-    <div></div><!-- deeppink -->
-    <div></div><!-- orange -->
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
 </section>
 
-
 <script>
-
-    //so firstly we have to think about a way how to store colors
-    // But we have to remember that we can be able to change the colors also
-    // So we can use an array to save all the colors using one reference
     let colors = ["deeppink","orange","red", "yellow", "green", "blue" ];
-
-    //set a timer to invoke this thing again and again
     setInterval(function (){
-        //get all the divs inside the section
         let divArray=document.querySelector("section").children;
-        //set the colors array values to the div elements
         for (let i = 0; i < divArray.length; i++) {
             divArray[i].style.background=colors[i];
         }
-        //get the last value of the array
        let lv= colors.pop();
         colors.unshift(lv);
-
-        // add it to the first index
     },400);
-
-
-
-
-
 </script>
 </body>
 </html>
