@@ -1044,14 +1044,14 @@ header > nav > menu {
     left: 50px;
     top: 225px;
     border-radius: 5px;
-    background-color: #f2f2f2;
+    background-color: rgb(53, 52, 52);
     padding: 20px;
 
 }
 
 /** {box-sizing: border-box;}*/
 input[type=text], select, textarea {
-    width: 100%;
+    width: 47%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -1072,7 +1072,7 @@ input[type=email] {
     resize: vertical;
 }
 input[type=number] {
-    width: 100%;
+    width: 47%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -1080,6 +1080,9 @@ input[type=number] {
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
+    position: absolute;
+    top: 20px;
+    left: 425px;
 }
 
 
@@ -1092,13 +1095,23 @@ input[type=submit] {
     cursor: pointer;
     position: absolute;
     left: 340px;
-    top: 558px;
+    top: 491px;
 }
 
 input[type=submit]:hover {
     background-color: #000000;
 }
 #country{
+    width: 47%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+#massage{
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -1109,14 +1122,9 @@ input[type=submit]:hover {
     resize: vertical;
 }
 #subject{
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
+    position: relative;
+    left: 22px;
+    width: 394px;
 }
 
 
@@ -1125,8 +1133,82 @@ input[type=submit]:hover {
 .footer{
     position: absolute;
     width: 1400px;
-    height: 300px;
+    height: 372px;
     left: 0px;
     top: 8000px;
+    /*top: 9774px;*/
 
+    background: #000000;
+
+}
+.footer>div:nth-child(1){
+    width: 100%;
+    height: 150px;
+    background: #000000;
+    position: relative;
+    display: flex;
+    /*align-content: center;*/
+
+}
+#teams{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 50px;
+}
+#teams>div{
+
+    /*border: 1px solid green;*/
+    width: 30%;
+    height: 50px;
+    flex-grow: 1;
+}
+#media{
+    width: 400px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 108px;
+}
+#media>div{
+    /*border: 1px solid green;*/
+    width: 80px;
+    height: 80px;
+    flex-grow: 1;
+    border-radius: 100%;
+}
+#media>div>a{
+    width: 80px;
+    height: 80px;
+    line-height: 3;
+
+}
+
+.footer>div:nth-child(2){
+    width: 100%;
+    height: 150px;
+    background: #000000;
+    /*position: relative;*/
+    /*align-content: center;*/
+
+}
+#footer_end>div:nth-child(1){
+    width: 93%;
+    height: 4px;
+    background-color: white;
+    position: relative;
+    left: 50px;
+
+}
+#footer_end>div:nth-child(2)>small{
+    position: relative;
+    left: 530px;
+    right: 0;
+    bottom: 0;
+    top: 27px;
+    margin: auto;
+}
+#name{
+    color: #0c63e4;
 }
