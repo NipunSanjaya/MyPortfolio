@@ -1,0 +1,54 @@
+section{
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+body>div:nth-child(2){
+    width: 82%;
+    height: 4px;
+    background-color: white;
+    position: absolute;
+    top: 45%;
+    left: 9%;
+}
+body>div:nth-child(3){
+    width: 82%;
+    height: 4px;
+    background-color: white;
+    position: absolute;
+    top: 57%;
+    left: 9%;
+}
+body>h2{
+    position: absolute;
+    top: 36%;
+    left: 39%;
+}
+
+.scanner{
+    display: flex;
+}
+
+.scanner__node{
+    width: 100px;
+    height: 50px;
+    margin: 5px;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.hot-red{
+    background-color: #ff0000 !important;
+}
+
+.red{
+    background-color: #ba0000 !important;
+}
+
+.white{
+    background-color: #ffffff;
+}
