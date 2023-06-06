@@ -35,7 +35,7 @@ header {
     top: 0;
     z-index: 2;
     height: 50px;
-    width: 1400px;
+    width: 1350px;
     box-shadow: 0 1px 2px 1px gray;
 }
 body {
@@ -87,7 +87,7 @@ body {
 }
 header > nav {
     position: absolute;
-    right: 25px;
+    right: 0px;
     top: 0;
     bottom: 0;
     margin: auto;
@@ -124,7 +124,7 @@ header > nav > menu {
     list-style-type: none;
     padding: 0;
     position: relative;
-    right: 70px;
+    right: 21px;
     top: -23px;
 }
 
@@ -139,7 +139,7 @@ header > nav > menu {
 }
 #home_section> aside> img{
     position: absolute;
-    width: 1400px;
+    width: 1350px;
     height: 610px;
     background-position: center 0px;
     opacity: 85%;
@@ -228,7 +228,7 @@ header > nav > menu {
 
 #about_section{
     position: absolute;
-    width: 1400px;
+    width: 1350px;
     height: 600px;
     left: 0px;
     top: 611px;
@@ -282,7 +282,7 @@ header > nav > menu {
 }
 #about_section>section{
     position: absolute;
-    width: 943px;
+    width: 893px;
     height: 600px;
     left: 457px;
     top: 0px;
@@ -358,7 +358,7 @@ header > nav > menu {
 }
 #services_section{
     position: absolute;
-    width: 1400px;
+    width: 1350px;
     height: 880px;
     left: 0px;
     top: 1211px;
@@ -383,7 +383,7 @@ header > nav > menu {
 }
 #services_section>div:nth-child(3){
     position: absolute;
-    width: 1350px;
+    width: 1260px;
     height: 100px;
     left: 50px;
     top: 167px;
@@ -398,35 +398,9 @@ header > nav > menu {
     background: #FFFFFF;
     border-radius: 20px;
 }
-/*#services_section>div:nth-child(4)>a{*/
-/*    position: absolute;*/
-/*    width: 138px;*/
-/*    height: 29px;*/
-/*    left: 126px;*/
-/*    top: 63px;*/
 
-/*    font-family: 'Inter';*/
-/*    font-style: normal;*/
-/*    font-weight: 500;*/
-/*    font-size: 24px;*/
-/*    line-height: 29px;*/
-/*    !* identical to box height *!*/
-
-
-/*    color: #000000;*/
-/*}*/
 #services_section>div:nth-child(4)>i{
-    /*box-sizing: border-box;*/
 
-    /*position: absolute;*/
-    /*width: 180px;*/
-    /*height: 180px;*/
-    /*left: 300px;*/
-    /*top: -79px;*/
-    /*border-radius: 100%;*/
-
-    /*background: #DF224F;*/
-    /*box-shadow: 0px 30px 30px rgba(159, 135, 140, 0.76);*/
     height: 130px;
     width: 130px;
     text-align: center;
@@ -441,38 +415,6 @@ header > nav > menu {
     border-radius: 50%;
     transition: all 0.4s linear 0s;
 }
-/*.fa:hover{*/
-/*    color: white;*/
-/*}*/
-/*.fa {*/
-/*    transition: 0.3s all;*/
-/*}*/
-/*.fa::after {*/
-/*    content: '';*/
-/*    display: block;*/
-/*    height: 130px;*/
-/*    width: 130px;*/
-/*    text-align: center;*/
-/*    !*background-color: #DF224F;*!*/
-/*    !*border-radius: 100%;*!*/
-/*    !*transition: width .3s;*!*/
-/*    !*text-align: center;*!*/
-/*    line-height: 130px;*/
-/*    color: rgb(255, 255, 255);*/
-/*    font-size: 60px;*/
-/*    position: absolute;*/
-/*    left: 40px;*/
-/*    top: -75px;*/
-/*    box-shadow: rgba(0, 0, 0, 0.75) 0px 30px 30px -15px;*/
-/*    background: rgb(255, 0, 102);*/
-/*    border-radius: 50%;*/
-/*    transition: all 0.4s linear 0s;*/
-/*}*/
-
-/* .fa:hover::after {*/
-/*    width: 60%;*/
-/*    transition: width .3s;*/
-/*}*/
 
 #services_section>div:nth-child(5)>i{
     height: 130px;
@@ -524,7 +466,7 @@ header > nav > menu {
 
 #resume_section{
     position: absolute;
-    width: 1400px;
+    width: 1350px;
     height: 880px;
     left: 0px;
     top: 2090px;
@@ -549,7 +491,7 @@ header > nav > menu {
 }
 #resume_section>div:nth-child(3) {
     position: absolute;
-    width: 1350px;
+    width: 1275px;
     height: 100px;
     left: 50px;
     top: 167px;
@@ -708,7 +650,7 @@ header > nav > menu {
 
 .counts {
     top: 2970px;
-    width: 1400px;
+    width: 1350px;
     /*opacity: 80%;*/
     padding: 1500px 0px;
     background: url(../img/portfolio/cricles_background.jpg) center center / cover no-repeat fixed;
@@ -748,7 +690,7 @@ header > nav > menu {
 /*latest work*/
 #latest-work{
     position: absolute;
-    width: 1400px;
+    width: 1350px;
     height: 1300px;
     left: 0px;
     top: 3655px;
@@ -860,14 +802,14 @@ header > nav > menu {
 }
 #project-area-padding{
     top: 2970px;
-    width: 1400px;
+    width: 1350px;
     /*opacity: 80%;*/
     padding: 705px 0px;
     background: url(../../Assignments/css/img/project-bg.jpg) center center / cover no-repeat fixed;
 }
 #project-area{
     position: absolute;
-    width: 1400px;
+    width: 1350px;
     height: 663px;
     left: 0px;
     top: 4955px;
@@ -915,7 +857,7 @@ header > nav > menu {
 /*my vlog*/
 #my-vlog-section{
     position: absolute;
-    width: 1400px;
+    width: 1350px;
     height: 1640px;
     left: 0px;
     top: 5660px;
@@ -1016,8 +958,9 @@ header > nav > menu {
 /*assignment section*/
 #assignment_section{
     position: absolute;
-    width: 100%;
+    width: 1350px;
     height: 663px;
+    /*height: 910px;*/
     left: 0px;
     top: 7280px;
 }
@@ -1040,12 +983,12 @@ header > nav > menu {
     position: relative;
     height: 70%;
     top: 156px;
-    left: 10%;
+    left: 0%;
 
     /*position: relative;*/
     display: flex;
     align-items: center;
-    width: 111%;
+    width: 94%;
     /*height: 100%;*/
     /*top: 0;*/
     bottom: 0;
@@ -1190,35 +1133,63 @@ header > nav > menu {
     background-color: rgb(53 50 50);
 }
 
-.see_more_button > a > input {
-    width: 100px;
-    height: 25px;
+#see{
+    width: 140px;
+    height: 40px;
+    position: relative;
+    left: 84%;
+    top: 62%;
+}
+#see-more{
+    width: 140px;
+    height: 40px;
+    position: relative;
+    left: 0px;
+    top: 0%;
+}
+#see-more>a{
+    width: 140px;
+    height: 30px;
+    line-height: 3;
+    position: relative;
+    /*left: 1173px;*/
+    /*top: 655%;*/
+}
+
+
+#see-more > a > i {
+    width: 140px;
+    height: 30px;
     box-shadow: -2px 2px 6px -3px black;
     border: none;
     border-radius: 5px;
-    transition: transform 1s;
-    position: absolute;
-    left: 112%;
-    top: 106%;
+    /*transition: transform 1s;*/
     background-color: rgb(53 50 50);
+    position: relative;
+    /*left: 1173px;*/
+    /*top: 655%;*/
 
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*contact section*/
 
 #contact_section{
     position: absolute;
-    width: 1400px;
+    width: 1350px;
     height: 663px;
     left: 0px;
-    top: 7943px;
+    top: 8088px;
 }
 #contact_section>div:nth-child(1){
     position: absolute;
     width: 129px;
     height: 10px;
     left: 50px;
-    top: 80px;
+    top: 13px;
     background: #DF224F;
 }
 #contact_section>h2{
@@ -1226,14 +1197,14 @@ header > nav > menu {
     width: 800px;
     height: 10px;
     left: 50px;
-    top: 85px;
+    top: 17px;
 }
 .contact{
     position: absolute;
     width: 800px;
     height: 600px;
     left: 50px;
-    top: 225px;
+    top: 115px;
     border-radius: 5px;
     background-color: rgb(53, 52, 52);
     padding: 20px;
@@ -1323,7 +1294,7 @@ input[type=submit]:hover {
 
 .footer{
     position: absolute;
-    width: 1400px;
+    width: 1350px;
     height: 372px;
     left: 0px;
     top: 8785px;
@@ -1342,7 +1313,7 @@ input[type=submit]:hover {
 
 }
 #teams{
-    width: 60%;
+    width: 57%;
     display: flex;
     align-items: center;
     position: relative;

@@ -8,20 +8,20 @@ section{
     overflow: hidden;
 }
 body>div:nth-child(2){
-    width: 82%;
+    width: 66%;
     height: 4px;
     background-color: white;
     position: absolute;
     top: 45%;
-    left: 9%;
+    left: 17%;
 }
 body>div:nth-child(3){
-    width: 82%;
+    width: 66%;
     height: 4px;
     background-color: white;
     position: absolute;
     top: 57%;
-    left: 9%;
+    left: 17%;
 }
 body>h2{
     position: absolute;
