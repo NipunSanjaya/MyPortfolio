@@ -194,17 +194,18 @@ header > nav > menu {
     color: #FFFFFF
 }
 #home_section>section>a{
-    box-sizing: border-box;
+
     position: absolute;
     width: 150px;
     height: 65px;
     left: 630px;
     top: 361px;
-
+    box-sizing: border-box;
     background: #DF224F;
     border: 1px solid #000000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
+    cursor: pointer;
 
     /*position: absolute;*/
     /*width: 98px;*/
@@ -219,11 +220,15 @@ header > nav > menu {
     line-height: 29px;
     text-align: center;
     padding: 15px;
-
-    /* identical to box height */
-
-
     color: #FFFFFF;
+}
+#home_section>section>a:hover {
+    /*background-color: #000000;*/
+    box-shadow: 0 0 12px 2px #0089ff;
+    color: #000000;
+    border: solid #0089ff 2px;
+    background-color: #ffffff;
+    transition: 1s;
 }
 
 #about_section{
@@ -288,6 +293,20 @@ header > nav > menu {
     top: 0px;
 
 }
+#btn2:hover{
+    box-shadow: 0 0 12px 2px #0089ff;
+    color: #000000; !important;
+    border: solid #0089ff 2px;
+    background-color: #ffffff;
+    transition: 1s;
+}
+#btn3:hover{
+    box-shadow: 0 0 12px 2px #0089ff;
+    color: #000000; !important;
+    border: solid #0089ff 2px;
+    background-color: #ffffff;
+    transition: 1s;
+}
 #box{
     position: absolute;
     width: 129px;
@@ -339,7 +358,7 @@ header > nav > menu {
     box-sizing: border-box;
 
     position: absolute;
-    width: 232px;
+    width: 237px;
     height: 65px;
     left: 243px;
     top: 532px;
@@ -696,6 +715,14 @@ header > nav > menu {
     top: 3655px;
     background: #2E2D32;
 }
+#latest-work>div:hover{
+    transform: scale(1.075);
+}
+#latest-work>div{
+    box-shadow: black -2px 2px 4px -2px;
+    border-radius: 10px;
+    transition: transform 1s;
+}
 #latest-work>div:nth-child(1) {
     position: absolute;
     width: 129px;
@@ -712,7 +739,8 @@ header > nav > menu {
     left: 50px;
     top: 240px;
     text-align: center;
-    transition: transform 0.5s ease 0s;
+
+
 }
 #my1Working>h5{
     height: 100px ;
@@ -807,6 +835,13 @@ header > nav > menu {
     padding: 705px 0px;
     background: url(../../Assignments/css/img/project-bg.jpg) center center / cover no-repeat fixed;
 }
+#btn4:hover{
+    box-shadow: 0 0 12px 2px #0089ff;
+    color: #000000; !important;
+    border: solid #0089ff 2px;
+    background-color: #ffffff;
+    transition: 1s;
+}
 #project-area{
     position: absolute;
     width: 1350px;
@@ -839,7 +874,7 @@ header > nav > menu {
 #project-area>a{
     box-sizing: border-box;
     position: absolute;
-    width: 172px;
+    width: 178px;
     height: 65px;
     left: 50px;
     top: 495px;
@@ -892,8 +927,15 @@ header > nav > menu {
 #my-vlog>div{
     box-shadow: black -2px 2px 4px -2px;
     border-radius: 10px;
-    transition: transform 0.5s ease 0s;
+    /*transition: transform 0.5s ease 0s;*/
+    transition: transform 1s;
+
 }
+#my-vlog>div:hover {
+    transform: scale(1.075);
+
+}
+
 #my-vlog>div:nth-child(1){
     background-image: url(../../assets/img/Cric_2.jpg);
     background-size: cover;
@@ -1022,7 +1064,7 @@ header > nav > menu {
     left: -48%;
     right: 0;
     margin: auto;
-    transition: transform 2s;
+    transition: transform 1s;
 }
 
 #assignment_section> section > section > div:nth-child(3) {
@@ -1103,7 +1145,9 @@ header > nav > menu {
     border-radius: 15px;
 }
 
-
+#assignment_section> section > section > div:hover{
+    transform: scale(1.075);
+}
 
 
 
@@ -1150,21 +1194,41 @@ header > nav > menu {
 #see-more>a{
     width: 140px;
     height: 30px;
-    line-height: 3;
+    /*line-height: 3;*/
     position: relative;
+    box-sizing: border-box;
+    background: #DF224F;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    /*padding: 15px;*/
+    color: #FFFFFF;
     /*left: 1173px;*/
     /*top: 655%;*/
+}
+#see-more>a:hover{
+    box-shadow: 0 0 12px 2px #0089ff;
+    color: #000000; !important;
+    border: solid #0089ff 2px;
+    background-color: #ffffff;
+    transition: 1s;
 }
 
 
 #see-more > a > i {
     width: 140px;
     height: 30px;
-    box-shadow: -2px 2px 6px -3px black;
+    /*box-shadow: -2px 2px 6px -3px black;*/
     border: none;
     border-radius: 5px;
     /*transition: transform 1s;*/
-    background-color: rgb(53 50 50);
+    /*background-color: rgb(53 50 50);*/
     position: relative;
     /*left: 1173px;*/
     /*top: 655%;*/
@@ -1249,19 +1313,37 @@ input[type=number] {
 
 
 input[type=submit] {
-    background-color: #DF224F;
+    /*background-color: #DF224F;*/
     color: white;
     padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
+    /*border: none;*/
+    border-radius: 10px;
     cursor: pointer;
     position: absolute;
     left: 340px;
     top: 491px;
+
+    box-sizing: border-box;
+    background: #DF224F;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /*border-radius: 10px;*/
+    /*cursor: pointer;*/
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    /*padding: 15px;*/
+    /*color: #FFFFFF;*/
 }
 
 input[type=submit]:hover {
-    background-color: #000000;
+    box-shadow: 0 0 12px 2px #0089ff;
+    color: #000000; !important;
+    border: solid #0089ff 2px;
+    background-color: #ffffff;
+    transition: 1s;
 }
 #country{
     width: 47%;
