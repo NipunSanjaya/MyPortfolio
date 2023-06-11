@@ -1,5 +1,6 @@
 body{
     background-color: #2E2D32;
+    /*width: 1500px;*/
 }
 span {
     color: #DF224F;
@@ -150,7 +151,22 @@ header > div > h1 {
     background-position: center;
 }
 #assignment_section > div:nth-child(17) > a > div {
-    background: url("../../assets/img/portfolio/Assignment12.png");
+    background: url("../../assets/img/portfolio/cal-pic.png");
+    background-size: cover;
+    background-position: center;
+}
+#assignment_section > div:nth-child(18) > a > div {
+    background: url("../../assets/img/portfolio/cal-pic.png");
+    background-size: cover;
+    background-position: center;
+}
+#assignment_section > div:nth-child(19) > a > div {
+    background: url("../../assets/img/portfolio/cal-pic.png");
+    background-size: cover;
+    background-position: center;
+}
+#assignment_section > div:nth-child(20) > a > div {
+    background: url("../../assets/img/portfolio/cal-pic.png");
     background-size: cover;
     background-position: center;
 }
