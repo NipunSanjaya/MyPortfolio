@@ -60,16 +60,23 @@
     </header>
     <section id="home_section" >
         <aside>
-            <img src="assets/img/portfolio/coding%20img.jpg" alt="">
+            <div></div>
         </aside>
         <section>
-            <span id="autoTyping"></span>
+            <div>
+                <span id="autoTyping"></span>
+            </div>
+<!--            <span id="autoTyping"></span>-->
             <!--<div>
                 <h1 ><span>H</span>i, I’m <span>N</span>ipun</h1>
             </div>-->
             <div>
-                <h4 >Full Stack Developer & Graphics Designer</h4>
+                <span id="autoTyping2"></span>
+<!--                <h4 >Full Stack Developer & Graphics Designer</h4>-->
             </div>
+<!--            <div>-->
+<!--                <h1 id="content"><h1 ><span>H</span>i, I’m <span>N</span>ipun</h1></h1>-->
+<!--            </div>-->
 
 
             <a href="#contact_section" class="button">HIRE ME</a>
@@ -79,14 +86,14 @@
 <main>
     <section  id="about_section" >
         <aside id="about-img">
-            <div id="about-img-1">
+            <div id="about-img-1" class="pop">
 
             </div>
             <div id="about-img-exp" >
-                <div>
-                    <h3>1</h3>
+                <div class="pop">
+                    <h3>1+</h3>
                 </div>
-                <div>
+                <div class="pop">
                     <h6>Years<br>Experience</h6>
                 </div>
 
@@ -229,7 +236,7 @@
                 <h5>Room Reserving System </h5>
             </div>
             <div id="my2Working">
-                <h5>Studio System </h5>
+                <h5>My Web Page </h5>
             </div>
             <div id="my3Working">
                 <h5>Vehicle Service System </h5>
@@ -368,9 +375,24 @@
             </form>
         </div>
 
-        <div>
-            <div id="map"></div>
-        </div>
+        <aside id="my-contact">
+            <div>
+                <i class="fa-solid fa-phone"></i>
+                <h4>Call Me</h4>
+                <p>+(94) 76 276 7256</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-envelope"></i>
+                <h4>Email</h4>
+                <p>nipunsanjaya99@gmail.com</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-location-dot"></i>
+                <h4>Location</h4>
+                <p>Udugama, Galle, Sri Lanka.</p>
+            </div>
+
+        </aside>
 
     </section>
 </main>
@@ -409,16 +431,40 @@
 
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
+<!--    <script src="assets/js/jquery-3.7.0.min.js"></script>-->
+
     <script>
+        // let h1Content = $("#content").text();
+        // let count = 0;
+        //
+        // setInterval(animateText, 50);
+        //
+        // function animateText() {
+        //     let content = h1Content.substring(0, count);
+        //     $("#content").text(content);
+        //     count++;
+        //     if (count == h1Content.length) {
+        //         count = 0;
+        //     }
+        // }
+
         var typed = new Typed('#autoTyping', {
             strings: [
-                '<h1 ><span>H</span>i, I’m <span>N</span>ipun</h1>',
-                '<h4 >Full Stack Developer </h4>',
-                '<H4>  & Graphics Designer</h4>',
+                // '<h1 ><span>H</span>i, I’m <span>N</span>ipun</h1>',
                 '<h1 ><span>H</span>i, I’m <span>N</span>ipun</h1>'
             ],
             typeSpeed: 100,
         });
+
+        var typed2 = new Typed('#autoTyping2', {
+            strings: [
+                '<h2 STYLE="color: white">Full Stack Developer and Graphics <br></br>  Designer</h2>'
+            ],
+            typeSpeed: 100,
+        });
+
+        // '<h4 >Full Stack Developer </h4>',
+        // '<H4>  & Graphics Designer</h4>',
     </script>
 
 </body>

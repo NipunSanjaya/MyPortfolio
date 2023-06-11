@@ -8,7 +8,9 @@ a {
     color: black;
     text-decoration: none;
 }
-
+html{
+    width: 1350px;
+}
 
 menu {
     display: inline;
@@ -46,6 +48,7 @@ body {
     line-height: 1.6;
     letter-spacing: 0.08rem;
     font-weight: 400;
+    width: 1350px;
 
 }
 /*header > aside {*/
@@ -133,38 +136,49 @@ header > nav > menu {
     color: #ffffff;
     z-index: 1;
     position: relative;
-    top: -662px;
+    top: 0px;
     left: 80px;
     text-align: center;
 }
-#home_section> aside> img{
+#home_section> aside> div{
     position: absolute;
     width: 1350px;
     height: 610px;
-    background-position: center 0px;
+    background: url("../../assets/img/portfolio/coding img.jpg") center center / cover no-repeat fixed;
+    /*background-position: center 0px;*/
     opacity: 85%;
     z-index: 0;
     position: relative;
+
 }
 #home_section{
     position: relative;
     top: 51px;
+    width: 1350px;
     /*height: 100vh;*/
 }
 #home_section>aside{
     position: relative;
     height: 100vh;
+    width: 1350px;
 }
-#home_section>section{
+/*#home_section>section>div:nth-child(1){*/
+/*    position: relative;*/
+/*    width: 70%;*/
+/*    height: 100px;*/
+/*    top: 0px;*/
+/*    left: 0px;*/
+/*}*/
+/*#home_section>section>div:nth-child(2){*/
 
-}
+/*}*/
 
 #home_section>section>div:nth-child(1){
-    position: absolute;
-    width: 632px;
-    height: 116px;
-    left: 539px;
-    top: 139px;
+    position: relative;
+    width: 70%;
+    height: 200px;
+    left: 114px;
+    top: -651px;
 
     font-family: 'Inter';
     font-style: normal;
@@ -177,17 +191,17 @@ header > nav > menu {
 }
 #home_section>section>div:nth-child(2){
     position: absolute;
-    width: 387px;
-    height: 29px;
-    left: 708px;
-    top: 298px;
+    width: 60%;
+    height: 150px;
+    left: 241px;
+    top: 220px;
 
     text-align: center;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
-    line-height: 29px;
+    line-height: 20px;
     /* identical to box height */
 
 
@@ -198,7 +212,7 @@ header > nav > menu {
     position: absolute;
     width: 150px;
     height: 65px;
-    left: 630px;
+    left: 585px;
     top: 361px;
     box-sizing: border-box;
     background: #DF224F;
@@ -259,7 +273,18 @@ header > nav > menu {
 
     background: url(../../assets/img/portfolio/about-me.png), linear-gradient(0deg, rgba(184, 96, 96, 0.61), rgba(184, 96, 96, 0.61)), #000000;
     border-radius: 20px;
+    transition: transform 2s;
 }
+#about-img-1:hover{
+    transform: scale(1.075);
+}
+.pop{
+    transition: transform 2s;
+}
+.pop:hover{
+    transform: scale(1.075);
+}
+
 #about-img-exp{
     position: absolute;
     width: 102px;
@@ -267,8 +292,11 @@ header > nav > menu {
     left: 23px;
     top: 141px;
     /*text-align: center;*/
-
+    transition: transform 2s;
     background: #DE2626;
+}
+#about-img-exp:hover{
+    transform: scale(1.075);
 }
 #about-img-exp>div:nth-child(1){
     position: absolute;
@@ -734,7 +762,7 @@ header > nav > menu {
 #my1Working{
     height: 360px ;
     width: 360px;
-    background: #799048;
+    background: url("../img/portfolio/blueOcationHotel.png");
     position: relative;
     left: 50px;
     top: 240px;
@@ -754,7 +782,7 @@ header > nav > menu {
 #my2Working{
     height: 360px;
     width: 360px;
-    background: #D85E5E;
+    background: url("../img/portfolio/Portpolio.png");
     position: relative;
     left: 480px;
     top: -155px;
@@ -814,7 +842,7 @@ header > nav > menu {
 #my6Working{
     height: 360px;
     width: 360px;
-    background: #3844B7;
+    background: url("../img/portfolio/chatApp.png");
     position: relative;
     left: 910px;
     top: -1280px;
@@ -832,7 +860,7 @@ header > nav > menu {
     top: 2970px;
     width: 1350px;
     /*opacity: 80%;*/
-    padding: 705px 0px;
+    padding: 840px 0px;
     background: url(../../Assignments/css/img/project-bg.jpg) center center / cover no-repeat fixed;
 }
 #btn4:hover{
@@ -1193,7 +1221,7 @@ header > nav > menu {
 }
 #see-more>a{
     width: 140px;
-    height: 30px;
+    height: 43px;
     /*line-height: 3;*/
     position: relative;
     box-sizing: border-box;
@@ -1223,7 +1251,7 @@ header > nav > menu {
 
 #see-more > a > i {
     width: 140px;
-    height: 30px;
+    height: 43px;
     /*box-shadow: -2px 2px 6px -3px black;*/
     border: none;
     border-radius: 5px;
@@ -1247,6 +1275,50 @@ header > nav > menu {
     height: 663px;
     left: 0px;
     top: 8088px;
+}
+#my-contact{
+    position: relative;
+    width: 32%;
+    height: 65%;
+    left: 67%;
+    /*border: solid black;*/
+    display: block;
+    top: 21%;
+}
+#my-contact > div {
+    position: relative;
+    margin: 44px 88px 50px;
+    height: 60px;
+    display: block;
+}
+#my-contact > div > i {
+    display: inline-block;
+    position: absolute;
+    top: 72px;
+    color: #DF224F;
+    font-size: 2em;
+    margin: -57px;
+    left: -22px;
+}
+#my-contact > div > h4 {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: -3px;
+    font-size: 24px;
+    color: #ffffff;
+    margin: 0;
+}
+#my-contact > div > p {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 38px;
+    font-size: 1em;
+    color: #ffffff;
+    margin: -42px;
+    font-family: 'Inter', sans-serif;
+    top: 80px;
 }
 #contact_section>div:nth-child(1){
     position: absolute;
@@ -1274,6 +1346,7 @@ header > nav > menu {
     padding: 20px;
 
 }
+
 
 /** {box-sizing: border-box;}*/
 input[type=text], select, textarea {
