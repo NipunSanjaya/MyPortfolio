@@ -179,6 +179,7 @@ header > nav > menu {
     height: 200px;
     left: 114px;
     top: -651px;
+    /*top: -1091px;*/
 
     font-family: 'Inter';
     font-style: normal;
@@ -193,7 +194,7 @@ header > nav > menu {
     position: absolute;
     width: 60%;
     height: 150px;
-    left: 241px;
+    left: 255px;
     top: 220px;
 
     text-align: center;
@@ -812,7 +813,7 @@ header > nav > menu {
 #my4Working{
     height: 360px;
     width: 360px;
-    background: #C4953C;
+    background: url("../img/portfolio/connet-for-game.jpg");
     position: relative;
     left: 50px;
     top: -490px;
@@ -827,7 +828,7 @@ header > nav > menu {
 #my5Working{
     height: 360px;
     width: 360px;
-    background: #B86060;
+    background: #C4953C;
     position: relative;
     left: 480px;
     top: -885px;
