@@ -252,6 +252,45 @@
         var $itemPrice = $('#itemPrice');
         var $tblItem = $('#tblItem');
 
+        // $('#itemCode','#itemName','#itemQty','#itemPrice').keyDown(function (e) {
+        //     if (e.key == "Tab") { // Tab key
+        //         e.preventDefault();
+        //     }
+        // });
+        //
+        $("#itemCode").keydown(function (e) {
+            if (e.key =="Enter"){
+
+                if (validation1()){
+                    $("#itemName").focus();
+                }else {
+                    alert("Invalid Item code format");
+                }
+
+            }
+        })
+
+        function validation1() {
+            var codeValidation = /^C00-(0\d{2}|[1-9]\d{2})$/;
+            codeValidation.test($itemCode.val());
+            //let b = codeValidation.test("$itemCode");
+            /*if (codeValidation.test($itemCode.val())){
+                //alert("Item code is done");
+            }else {
+                alert("Invalid Item code format");
+            }*/
+        }
+        function validation2() {
+            var nameValidation =/^[A-Z],[a-z]$/ ;
+            //let b = codeValidation.test("$itemCode");
+            if (nameValidation.test($itemName.val())){
+            }else {
+                alert("Invalid Item name format");
+            }
+        }
+
+
+
         $('#btnItem').click(function() {
             // Add item logic
             var code = $itemCode.val();
@@ -265,16 +304,24 @@
                 qty: qty,
                 price: price
             };
+            //validation1();
             itemData.push(item);
+
             updateTable();
+            $itemCode.focus();
+            clearText();
+            // $itemCode.val('');
+            // $itemName.val('');
+            // $itemQty.val('');
+            // $itemPrice.val('');
 
-
+        });
+        function clearText() {
             $itemCode.val('');
             $itemName.val('');
             $itemQty.val('');
             $itemPrice.val('');
-
-        });
+        }
 
         function updateTable() {
             let tBody = $tblItem;
@@ -288,6 +335,7 @@
                 row.appendTo(tBody);
             });
             EventBinding();
+            clearText();
         }
 
 
@@ -320,6 +368,8 @@
                     };
                     itemData[i] = updatedItem;
                     updateTable();
+                    clearText();
+                    $itemCode.focus();
                     return true;
                 }
             }
@@ -333,19 +383,31 @@
 
         $('#btnItemUpdate').click(function() {
             // Update selected item in the table
+            // if(searchItem(code)==undefined){
+            //     alert("No search Item");
+            // }else {
+            //     let consent = confirm("do you really went to update item ?");
+            //     if (consent){
+            //         var code = $itemCode.val();
+            //
+            //     }
+            // }
             var code = $itemCode.val();
             updateItem(code);
+
         });
 
-        $('#btn-clear').click(function() {
+        $('#btn-clear').click(function clear() {
             updateTable();
             $itemCode.val('');
             $itemName.val('');
             $itemQty.val('');
             $itemPrice.val('');
+            $itemCode.focus();
         });
         $('#btnGetAll').click( function() {
             updateTable();
+            $itemCode.focus();
         });
 
 
@@ -364,8 +426,21 @@
                 $itemName.val(name);
                 $itemQty.val(qty);
                 $itemPrice.val(price);
+                $itemCode.focus();
             });
         }
+
+        // $('#txtItemCode').onkeypress(function (){
+        //     var code = $itemCode.val();
+        //     return itemData.find(function (item) {
+        //         return itemData.code == item;
+        //     })
+        // });
+        // function searchItem(code) {
+        //     return itemData.find(function (item) {
+        //         return itemData.code == item;
+        //     })
+        // }
     });
 
 </script>
