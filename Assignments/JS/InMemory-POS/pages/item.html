@@ -294,12 +294,12 @@
         $('#btnItemDelete').click(function() {
 
             var code = $itemCode.val();
-            deleteCustomer(code);
+            deleteItem(code);
             updateTable();
 
         });
 
-        function deleteCustomer (code) {
+        function deleteItem (code) {
             for (let i = 0; i < itemData.length; i++) {
                 if (itemData[i].code == code){
                     itemData.splice(i, 1);
@@ -308,6 +308,24 @@
             }
 
         }
+        function updateItem (code) {
+            for (let i = 0; i < itemData.length; i++) {
+                if (itemData[i].code == code){
+                    // itemData.splice(i, 1);
+                    var updatedItem = {
+                        code: $itemCode.val(),
+                        name: $itemName.val(),
+                        qty: $itemQty.val(),
+                        price: $itemPrice.val()
+                    };
+                    itemData[i] = updatedItem;
+                    updateTable();
+                    return true;
+                }
+            }
+
+        }
+
 
         // $('#btnItemUpdate').click(function() {
         //     console.log(alert("hi"))
@@ -315,23 +333,8 @@
 
         $('#btnItemUpdate').click(function() {
             // Update selected item in the table
-            // var selectedIndex = $itemCode.val();
-            var selectedItemId = $itemTable.find('.selected').data('id');
-
-            // Find the index of the selected item in the itemData array
-            var selectedIndex = itemData.findIndex(function(item) {
-                return item.id === selectedItemId;
-            });
-            if (selectedIndex !== -1) {
-                var updatedItem = {
-                    code: $itemCode.val(),
-                    name: $itemName.val(),
-                    qty: $itemQty.val(),
-                    price: $itemPrice.val()
-                };
-                itemData[selectedIndex] = updatedItem;
-                updateTable();
-            }
+            var code = $itemCode.val();
+            updateItem(code);
         });
 
         $('#btn-clear').click(function() {
