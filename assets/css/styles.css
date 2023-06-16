@@ -550,11 +550,6 @@ header > nav > div:nth-child(2) {
 /* --------------------------------------
    COUNT
 -----------------------------------------*/
-.counts {
-    padding: 80px 0;
-    background: url("../img/portfolio/cricles background.jpg") no-repeat fixed center;
-    background-size: cover;
-}
 
 .skill_box {
     text-align: center;
