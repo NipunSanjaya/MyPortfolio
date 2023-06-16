@@ -141,13 +141,13 @@ header > nav > menu {
     text-align: center;
 }
 #home_section> aside> div{
-    position: absolute;
+    /*position: absolute;*/
     width: 1350px;
     height: 610px;
     background: url("../../assets/img/portfolio/coding img.jpg") center center / cover no-repeat fixed;
     /*background-position: center 0px;*/
     opacity: 85%;
-    z-index: 0;
+    /*z-index: 0;*/
     position: relative;
 
 }
@@ -1568,6 +1568,10 @@ input[type=submit]:hover {
 }
 
 @media screen and (max-width: 768px) {
+
+    #btn-nav {
+        display: none;
+    }
     html {
         width: auto;
     }
@@ -1625,3 +1629,126 @@ input[type=submit]:hover {
         top: 2526px;
     }
 }
+
+
+@media (max-width: 600px){
+    #btn-nav {
+        width: 70px;
+        top: 12px;
+        bottom: 0;
+        margin-bottom: auto;
+        margin-top: auto;
+        height: 50px;
+        position: absolute;
+        right: 5px;
+        display: revert;
+    }
+
+    #about-img {
+        display: none;
+    }
+
+    #about_section>section {
+        width: 94%;
+        left: 50px;
+    }
+
+    #box-3>a {
+        width: 237px;
+        left: 290px;
+    }
+
+    #box-4>a {
+        left: 685px;
+    }
+
+    #services_section {
+        height: 994px;
+    }
+
+    #services_section>div:nth-child(3) {
+        display: none;
+    }
+
+    #services_section>div:nth-child(4) {
+        width: 93%;
+        height: 300px;
+        left: 50px;
+        top: 225px;
+    }
+
+    #services_section>div:nth-child(4)>i {
+        left: 85%;
+    }
+
+    #services_section>div:nth-child(5) {
+        width: 93%;
+        height: 300px;
+        left: 50px;
+        top: 635px;
+    }
+
+    #services_section>div:nth-child(5)>i {
+        left: 85%;
+    }
+
+    #resume_section {
+        top: 2152px;
+    }
+
+    #resume_section>div:nth-child(3) {
+        display: none;
+    }
+
+    #resume_section>div:nth-child(4) {
+        width: 93%;
+        height: 271px;
+        top: 220px;
+    }
+
+    #res-box1-para {
+        width: 50%;
+        height: 72px;
+        left: 535px;
+        top: 137px;
+    }
+
+    #resume_section>div:nth-child(5) {
+        width: 93%;
+        height: 271px;
+        top: 535px;
+        left: 50px;
+    }
+
+    #res-box2-para {
+        width: 50%;
+        height: 72px;
+        left: 535px;
+        top: 129px;
+    }
+
+    #skills {
+        top: 3037px;
+    }
+
+    header > nav > menu {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 600px){
+    #btn-nav {
+        display: none;
+    }
+    /*#home_section>section>div:nth-child(1) {*/
+    /*    top: -1089px;*/
+    /*}*/
+}
+
+
+
+
+
+
+
