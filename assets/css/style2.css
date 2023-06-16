@@ -798,7 +798,7 @@ header > nav > menu {
 #my3Working{
     height: 360px;
     width: 360px;
-    background: #2E7A9A;
+    background: url("../img/portfolio/vehical-service.png");
     position: relative;
     left: 910px;
     top: -550px;
@@ -828,7 +828,7 @@ header > nav > menu {
 #my5Working{
     height: 360px;
     width: 360px;
-    background: #C4953C;
+    background: url("../img/portfolio/hostel-system.png");
     position: relative;
     left: 480px;
     top: -885px;
