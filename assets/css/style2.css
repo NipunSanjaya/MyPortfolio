@@ -1566,3 +1566,62 @@ input[type=submit]:hover {
 #name{
     color: #0c63e4;
 }
+
+@media screen and (max-width: 768px) {
+    html {
+        width: auto;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    body {
+        width: 100%;
+    }
+
+    #logo {
+        left: 15px;
+    }
+
+    #logo-pic {
+        width: 40px;
+        height: 40px;
+    }
+
+    header > nav {
+        right: 15px;
+    }
+
+    #home_section > aside > div {
+        width: 100%;
+        height: 561px;
+    }
+    #autoTyping{
+        position: relative;
+        top: -446px;
+    }
+    .counts {
+        padding: 1176px 0px;
+    }
+    #latest-work {
+        position: absolute;
+        top: 3705px;
+    }
+    #project-area-padding {
+        padding: 955px 0px;
+
+    }
+    #assignment_section {
+        position: relative;
+        top: 2373px;
+    }
+    #contact_section {
+        position: relative;
+        top: 2423px;
+    }
+    .footer {
+        position: relative;
+        top: 2526px;
+    }
+}
