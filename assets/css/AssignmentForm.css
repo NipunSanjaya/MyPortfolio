@@ -131,7 +131,7 @@ header > div > h1 {
     background-position: center;
 }
 #assignment_section > div:nth-child(13) > a > div {
-    background: url("../../assets/img/portfolio/Assignment13.png");
+    background: url("../../assets/img/portfolio/spa.png");
     background-size: cover;
     background-position: center;
 }
@@ -141,7 +141,7 @@ header > div > h1 {
     background-position: center;
 }
 #assignment_section > div:nth-child(15) > a > div {
-    background: url("../../assets/img/portfolio/Assignment14.png");
+    background: url("../../assets/img/portfolio/spa2 (2).png");
     background-size: cover;
     background-position: center;
 }
@@ -156,20 +156,20 @@ header > div > h1 {
     background-position: center;
 }
 #assignment_section > div:nth-child(18) > a > div {
-    background: url("../../assets/img/portfolio/cal-pic.png");
+    background: url("../../assets/img/portfolio/pos.png");
     background-size: cover;
     background-position: center;
 }
-#assignment_section > div:nth-child(19) > a > div {
-    background: url("../../assets/img/portfolio/cal-pic.png");
-    background-size: cover;
-    background-position: center;
-}
-#assignment_section > div:nth-child(20) > a > div {
-    background: url("../../assets/img/portfolio/cal-pic.png");
-    background-size: cover;
-    background-position: center;
-}
+/*#assignment_section > div:nth-child(19) > a > div {*/
+/*    background: url("../../assets/img/portfolio/cal-pic.png");*/
+/*    background-size: cover;*/
+/*    background-position: center;*/
+/*}*/
+/*#assignment_section > div:nth-child(20) > a > div {*/
+/*    background: url("../../assets/img/portfolio/cal-pic.png");*/
+/*    background-size: cover;*/
+/*    background-position: center;*/
+/*}*/
 
 @media all and (max-width: 1440px) {
     #assignment_section {
