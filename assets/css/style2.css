@@ -1,6 +1,5 @@
 
 
-
 a {
     display: inline-block;
 }
@@ -10,6 +9,7 @@ a {
 }
 html{
     width: 1350px;
+    font-size: 92.5%;
 }
 
 menu {
@@ -51,9 +51,10 @@ body {
     width: 1350px;
 
 }
-/*header > aside {*/
-/*    display: inline-block;*/
-/*}*/
+
+header > aside {
+    display: inline-block;
+}
 #logo{
 
     border-radius: 100%;
@@ -1744,6 +1745,32 @@ input[type=submit]:hover {
     /*#home_section>section>div:nth-child(1) {*/
     /*    top: -1089px;*/
     /*}*/
+}
+
+#loader {
+    height: 650px;
+    width: 100%;
+    transition: opacity 1s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #000000;
+}
+
+#loader > div {
+    width: 290px;
+    height: 290px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: url("../img/portfolio/loader1.gif");
+    background-size: cover;
+    background-position: center;
 }
 
 

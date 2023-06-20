@@ -11,6 +11,7 @@
 
     <title>Nipun Sanjaya</title>
     <link href="assets/img/portfolio/N.jpg" rel="icon">
+<!--    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">-->
 <!--    <link rel="stylesheet" href="assets/css/styles.css">-->
     <link rel="stylesheet" href="assets/css/style2.css">
     <link rel="stylesheet" href="assets/css/Normalize.css">
@@ -20,6 +21,19 @@
 </head>
 
 <body>
+
+<!--    <div class="preloader">-->
+<!--        <div class="d-table">-->
+<!--            <div class="d-table-cell align-middle">-->
+<!--                <div class="spinner">-->
+<!--                    <div class="double-bounce1"></div>-->
+<!--                    <div class="double-bounce2"></div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+
+
     <header>
         <aside >
             <div id="logo" style="color: #0a53be">
@@ -411,9 +425,10 @@
                     <div><a href="#0">License</a></div>
             </div>
             <div id="media">
-                    <div class="social_media"><a href="https://www.linkedin.com/in/nipun-wickramarathna-26085b264" target="_blank"><i class="fa fa-linkedin fa-2xl"></i></a></div>
+                <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+                    <div class="social_media"><a href="https://www.linkedin.com/in/nipun-wickramarathna-26085b264" target="_blank"><i class="fa fa-linkedin-in fa-2xl"></i></a></div>
                     <div class="social_media"><a href="https://twitter.com/nipunsanjaya99?t=bXy54YdpNpDTmBRzABjm0g&s=09" target="_blank"><i class="fa fa-twitter fa-2xl"></i></a></div>
-                    <div class="social_media"><a href="https://www.facebook.com/nipun.sanjaya.33?mibextid=ZbWKwL" target="_blank"><i class="fa fa-facebook-f fa-2xl"></i></a></div>
+                    <div class="social_media"><a href="https://www.facebook.com/nipun.sanjaya.33?mibextid=ZbWKwL" target="_blank"><i class="fa fa-facebook fa-2xl"></i></a></div>
                     <div class="social_media"><a href="https://instagram.com/n_i_p_u_n_sanjaya?igshid=MzNlNGNkZWQ4Mg==" target="_blank"><i class="fa fa-instagram fa-2xl"></i></a></div>
                     <div class="social_media"><a href="https://github.com/NipunSanjaya" target="_blank"><i class="fa fa-github fa-2xl"></i></a></div>
             </div>
@@ -432,12 +447,23 @@
         </div>
     </footer>
 
-<!--    <script src="https://kit.fontawesome.com/19027577b6.js" crossorigin="anonymous"></script>-->
+<div id="loader">
+    <div></div>
+</div>
+
+    <script src="https://kit.fontawesome.com/19027577b6.js" crossorigin="anonymous"></script>
 
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
-<!--    <script src="assets/js/jquery-3.7.0.min.js"></script>-->
+    <script src="assets/js/jquery-3.7.0.min.js"></script>
 
+    <script src="assets/css/bootstrap.min.js"></script>
+
+    <script>
+        $(window).on('load',function(){
+            $("#loader").fadeOut(800);
+        });
+    </script>
     <script>
         // let h1Content = $("#content").text();
         // let count = 0;
