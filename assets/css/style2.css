@@ -247,6 +247,38 @@ header > nav > menu {
     transition: 1s;
 }
 
+#scroll-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+
+    z-index: 9;
+    color: #fff;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    -ms-transition: all .3s;
+}
+
+#scroll-to-top i {
+    position: relative;
+    top: -1px;
+    display: block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+}
+
+#scroll-to-top:hover {
+    background: #fff;
+    color: #ff0066;
+    transform: scale(1.2); !important;
+}
+
 #about_section{
     position: absolute;
     width: 1350px;
@@ -1500,10 +1532,10 @@ input[type=submit]:hover {
 }
 .fa:hover {
     font-size: 40px;
-    box-shadow: 0 0 12px 2px #0089ff;
+    box-shadow: 0 0 12px 2px #ff0066;
     color: #ffffff;
-    border: solid #0089ff 2px;
-    background-color: #0089ff;
+    border: solid #ff0066 2px;
+    background-color: #ff0066;
     transition: 0.2s;
 }
 

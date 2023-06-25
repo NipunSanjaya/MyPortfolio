@@ -4,15 +4,15 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="DESCRIPTION">
-    <meta name="keywords" content="KEYWORDS">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <meta name="description" content="This is my portfolio, You can see my details and contact me">
+    <meta name="keywords" content="nipun sanjaya,nipun,sanjaya,software engineer,web developer,software developer,full stack engineer">
     <meta name="author" content="Nipun Sanjaya">
+    <meta name="robots" content="index">
 
     <title>Nipun Sanjaya</title>
     <link href="assets/img/portfolio/N.jpg" rel="icon">
-<!--    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">-->
-<!--    <link rel="stylesheet" href="assets/css/styles.css">-->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/style2.css">
     <link rel="stylesheet" href="assets/css/Normalize.css">
     <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
@@ -21,18 +21,6 @@
 </head>
 
 <body>
-
-<!--    <div class="preloader">-->
-<!--        <div class="d-table">-->
-<!--            <div class="d-table-cell align-middle">-->
-<!--                <div class="spinner">-->
-<!--                    <div class="double-bounce1"></div>-->
-<!--                    <div class="double-bounce2"></div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-
 
     <header>
         <aside >
@@ -99,9 +87,12 @@
 
 
             <a href="#contact_section" class="button">HIRE ME</a>
+            <div id="scroll-to-top"><a href="#home_section"><i class="fa fa-arrow-up fa-fw"></i></a></div>
         </section>
 
+
     </section>
+
 <main>
     <section  id="about_section" >
         <aside id="about-img">
@@ -447,11 +438,11 @@
         </div>
     </footer>
 
-<div id="loader">
+    <div id="loader">
     <div></div>
 </div>
 
-    <script src="https://kit.fontawesome.com/19027577b6.js" crossorigin="anonymous"></script>
+<!--    <script src="https://kit.fontawesome.com/19027577b6.js" crossorigin="anonymous"></script>-->
 
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
@@ -460,9 +451,32 @@
     <script src="assets/css/bootstrap.min.js"></script>
 
     <script>
-        $(window).on('load',function(){
-            $("#loader").fadeOut(800);
+        // $(window).on('load',function(){
+        //     $("#loader").fadeOut(800);
+        // });
+        $("#header").css("display", 'none');
+        let loader = document.getElementById("loader");
+        window.addEventListener("load", function () {
+            loader.style.display = 'none';
+            $("#header").css("display", 'block');
+
         });
+
+        window.addEventListener('load', function () {
+            let professionElement = document.getElementById("profession");
+            professionElement.style.display = "none";
+            let style = document.createElement("style");
+            style.innerHTML = `body::-webkit-scrollbar {display: block;}`;
+            document.head.appendChild(style);
+        });
+
+        // run after just creating the DOM
+        document.addEventListener('DOMContentLoaded', function () {
+            let style = document.createElement("style");
+            style.innerHTML = `body::-webkit-scrollbar {display: none;}`;
+            document.head.appendChild(style);
+        });
+
     </script>
     <script>
         // let h1Content = $("#content").text();
@@ -481,7 +495,6 @@
 
         var typed = new Typed('#autoTyping', {
             strings: [
-                // '<h1 ><span>H</span>i, I’m <span>N</span>ipun</h1>',
                 '<h1 ><span>H</span>i, I’m <span>N</span>ipun</h1>'
             ],
             typeSpeed: 100,
@@ -494,8 +507,6 @@
             typeSpeed: 100,
         });
 
-        // '<h4 >Full Stack Developer </h4>',
-        // '<H4>  & Graphics Designer</h4>',
     </script>
 
 </body>
