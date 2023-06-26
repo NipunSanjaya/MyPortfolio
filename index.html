@@ -21,8 +21,10 @@
 </head>
 
 <body>
-
-    <header>
+<div id="loader">
+    <div></div>
+</div>
+    <header id="hed">
         <aside >
             <div id="logo" style="color: #0a53be">
                 <div id="logo-pic">
@@ -427,10 +429,7 @@
             </div>
         </div>
     </footer>
-    <div><a href="https://www.ijse.lk/"></a></div>
-    <div id="loader">
-    <div></div>
-</div>
+
 
 <!--    <script src="https://kit.fontawesome.com/19027577b6.js" crossorigin="anonymous"></script>-->
 
@@ -441,31 +440,42 @@
     <script src="assets/css/bootstrap.min.js"></script>
 
     <script>
-        // $(window).on('load',function(){
-        //     $("#loader").fadeOut(800);
+        $(window).on('load',function(){
+            $("#loader").fadeOut(800);
+        });
+
+        let loarder = $("#loader");
+        // let head = $("hed");
+        // head.css("display", "none");
+
+        // function loarding() {
+        //     loarder.css("display", "none");
+        //     head.css("display", "block");
+        //
+        // }
+
+        // $("#header").css("display", 'none');
+        // let loader = document.getElementById("loader");
+        // window.addEventListener("load", function () {
+        //     loader.style.display = 'none';
+        //     $("#header").css("display", 'block');
+        //
         // });
-        $("#header").css("display", 'none');
-        let loader = document.getElementById("loader");
-        window.addEventListener("load", function () {
-            loader.style.display = 'none';
-            $("#header").css("display", 'block');
-
-        });
-
-        window.addEventListener('load', function () {
-            let professionElement = document.getElementById("profession");
-            professionElement.style.display = "none";
-            let style = document.createElement("style");
-            style.innerHTML = `body::-webkit-scrollbar {display: block;}`;
-            document.head.appendChild(style);
-        });
-
-        // run after just creating the DOM
-        document.addEventListener('DOMContentLoaded', function () {
-            let style = document.createElement("style");
-            style.innerHTML = `body::-webkit-scrollbar {display: none;}`;
-            document.head.appendChild(style);
-        });
+        //
+        // window.addEventListener('load', function () {
+        //     let professionElement = document.getElementById("profession");
+        //     professionElement.style.display = "none";
+        //     let style = document.createElement("style");
+        //     style.innerHTML = `body::-webkit-scrollbar {display: block;}`;
+        //     document.head.appendChild(style);
+        // });
+        //
+        // // run after just creating the DOM
+        // document.addEventListener('DOMContentLoaded', function () {
+        //     let style = document.createElement("style");
+        //     style.innerHTML = `body::-webkit-scrollbar {display: none;}`;
+        //     document.head.appendChild(style);
+        // });
 
     </script>
     <script>
