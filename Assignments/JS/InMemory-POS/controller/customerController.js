@@ -1,4 +1,8 @@
 $("#save-customer").click(function () {
+    saveCustomer();
+});
+
+function saveCustomer() {
     let nic = $("#inputNIC").val();
     let name = $("#inputName").val();
     let tel = $("#inputTel").val();
@@ -9,12 +13,12 @@ $("#save-customer").click(function () {
                 if (address !== "" && validateAddress()) {
                     $("#customer-table-body").empty();
                     if (checkNIC(nic)) {
-                        customer.push({
-                            nic: nic,
-                            name: name,
-                            tel: tel,
-                            address: address
-                        });
+                        let newCustomer = Object.assign({}, customer);
+                        newCustomer.nic = nic;
+                        newCustomer.name = name;
+                        newCustomer.tel = tel;
+                        newCustomer.address = address;
+                        customerDB.push(newCustomer);
                         loadCustomers();
                     } else {
                         $("#inputNIC").focus();
@@ -34,16 +38,16 @@ $("#save-customer").click(function () {
     } else {
         $("#inputNIC").focus();
     }
-});
+}
 
 function loadCustomers() {
     let tableBody = $("#customer-table-body");
-    for (let i = 0; i < customer.length; i++) {
+    for (let i = 0; i < customerDB.length; i++) {
         let tr = `<tr>
-                    <td>${customer[i].nic}</td>
-                    <td>${customer[i].name}</td>
-                    <td>${customer[i].tel}</td>
-                    <td>${customer[i].address}</td>
+                    <td>${customerDB[i].nic}</td>
+                    <td>${customerDB[i].name}</td>
+                    <td>${customerDB[i].tel}</td>
+                    <td>${customerDB[i].address}</td>
                     <td>
                       <button type="button" class="btn btn-danger border-0" style="background-color: #ff0014"><i class="fa-solid fa-trash-can"></i></button>
                       <button type="button" class="btn border-0 btn-danger" style="background-color: #1aff00;"><i class="fa-solid fa-pencil"></i></button>
@@ -59,19 +63,6 @@ $("#addNewCustomerClearButton").click(function () {
     clearNewCustomerForm();
 });
 
-/*function getCustomer() {
-    $("#customer-table-body>tr").click(function () {
-        let nic = $(this).children().eq(0).text();
-        let name = $(this).children().eq(1).text();
-        let tel = $(this).children().eq(2).text();
-        let address = $(this).children().eq(3).text();
-        $('#inputNIC').val(nic);
-        $('#inputName').val(name);
-        $('#inputTel').val(tel);
-        $('#inputAddress').val(address);
-        popUpAddCustomerForm();
-    });
-}*/
 function getDeleteCustomer() {
     $("#customer-table-body>tr>td>button:nth-child(1)").click(function () {
         let nic = $(this).parents("#customer-table-body>tr").children().eq(0).text();
@@ -90,10 +81,10 @@ function getDeleteCustomer() {
 }
 
 function deleteCustomer(nic) {
-    for (let i = 0; i < customer.length; i++) {
+    for (let i = 0; i < customerDB.length; i++) {
         console.log(nic)
-        if (customer[i].nic === nic) {
-            customer.splice(i, 1);
+        if (customerDB[i].nic === nic) {
+            customerDB.splice(i, 1);
             return true;
         }
     }
@@ -127,8 +118,8 @@ function clearNewCustomerForm() {
 }
 
 function checkNIC(nic) {
-    for (let i = 0; i < customer.length; i++) {
-        if (nic === customer[i].nic) {
+    for (let i = 0; i < customerDB.length; i++) {
+        if (nic === customerDB[i].nic) {
             return false;
         }
     }
@@ -137,7 +128,7 @@ function checkNIC(nic) {
 
 $("#customerSearchButton").click(function () {
     let x = $("#searchBar").val();
-    customer.filter(function (e) {
+    customerDB.filter(function (e) {
         if (e.nic === x) {
             $("#customer-table-body").empty();
             console.log(e.nic, e.name, e.address, e.tel)
@@ -169,12 +160,16 @@ $("#customerSearchClear").click(function () {
 let customer1 = undefined;
 
 function searchCustomer(nic) {
-    return customer.find(function (customer) {
+    return customerDB.find(function (customer) {
         return customer.nic === nic;
     });
 }
 
 $("#customerUpdateButton").click(function () {
+    updateCustomer();
+});
+
+function updateCustomer() {
     customer1 = searchCustomer($("#inputUpdateNIC").val());
     name = $("#inputUpdateName").val();
     tel = $("#inputUpdateTel").val();
@@ -198,7 +193,7 @@ $("#customerUpdateButton").click(function () {
         $("#inputUpdateName").focus();
     }
 
-});
+}
 
 function clearUpdateCustomerForm() {
     $("#inputUpdateNIC").val("");
@@ -209,6 +204,11 @@ function clearUpdateCustomerForm() {
 
 
 $("#inputNIC,#inputName,#inputTel,#inputAddress").keydown(function (e) {
+    if (e.key === "Tab") {
+        e.preventDefault();
+    }
+});
+$("#inputUpdateNIC,#inputUpdateName,#inputUpdateTel,#inputUpdateAddress").keydown(function (e) {
     if (e.key === "Tab") {
         e.preventDefault();
     }
@@ -226,6 +226,31 @@ $("#inputName").keydown(function (e) {
 $("#inputTel").keydown(function (e) {
     if (e.key === "Enter") {
         $("#inputAddress").focus();
+    }
+});
+$("#inputAddress").keydown(function (e) {
+    if (e.key === "Enter") {
+        saveCustomer();
+    }
+});
+$("#inputUpdateNIC").keydown(function (e) {
+    if (e.key === "Enter") {
+        $("#inputUpdateName").focus();
+    }
+});
+$("#inputUpdateName").keydown(function (e) {
+    if (e.key === "Enter") {
+        $("#inputUpdateTel").focus();
+    }
+});
+$("#inputUpdateTel").keydown(function (e) {
+    if (e.key === "Enter") {
+        $("#inputUpdateAddress").focus();
+    }
+});
+$("#inputUpdateAddress").keydown(function (e) {
+    if (e.key === "Enter") {
+        updateCustomer();
     }
 });
 
@@ -258,9 +283,11 @@ function validateNIC() {
     let checkNewNIC = newNIC.test($("#inputNIC").val());
     if (!checkOldNIC && !checkNewNIC) {
         $("#inputNIC").css("border", 'solid red 2px');
+        $("#inputNICAlert").text("Invalid NIC number. Use 000000000000 or 0000000000v");
         return false;
     } else {
         $("#inputNIC").css("border", 'solid green 2px');
+        $("#inputNICAlert").text("");
         return true;
     }
 }
@@ -269,9 +296,11 @@ function validateCusName() {
     let check = name.test($("#inputName").val());
     if (!check) {
         $("#inputName").css("border", 'solid red 2px');
+        $("#inputNameAlert").text("Invalid name. You can only use characters for your name");
         return false;
     } else {
         $("#inputName").css("border", 'solid green 2px');
+        $("#inputNameAlert").text("");
         return true;
     }
 }
@@ -280,9 +309,11 @@ function validateTel() {
     let check = tel.test($("#inputTel").val());
     if (!check) {
         $("#inputTel").css("border", 'solid red 2px');
+        $("#inputTelAlert").text("Invalid Phone number. Use Ex :- 0760000000 or +9400000000");
         return false;
     } else {
         $("#inputTel").css("border", 'solid green 2px');
+        $("#inputTelAlert").text("");
         return true;
     }
 }
@@ -291,9 +322,11 @@ function validateAddress() {
     let check = address.test($("#inputAddress").val());
     if (!check) {
         $("#inputAddress").css("border", 'solid red 2px');
+        $("#inputAddressAlert").text("Invalid Address");
         return false;
     } else {
         $("#inputAddress").css("border", 'solid green 2px');
+        $("#inputAddressAlert").text("");
         return true;
     }
 }
@@ -304,9 +337,11 @@ function validateUpdateCusName() {
     let check = nameRegex.test(inputName);
     if (!check) {
         $("#inputUpdateName").css("border", 'solid red 2px');
+        $("#inputUpdateNameAlert").text("Invalid name. You can only use characters for your name");
         return false;
     } else {
         $("#inputUpdateName").css("border", 'solid green 2px');
+        $("#inputUpdateNameAlert").text("");
         return true;
     }
 }
@@ -317,9 +352,11 @@ function validateUpdateAddress() {
     let check = addressRegex.test(inputAddress);
     if (!check) {
         $("#inputUpdateAddress").css("border", 'solid red 2px');
+        $("#inputUpdateAddressAlert").text("Invalid Address.");
         return false;
     } else {
         $("#inputUpdateAddress").css("border", 'solid green 2px');
+        $("#inputUpdateAddressAlert").text("");
         return true;
     }
 }
@@ -330,9 +367,11 @@ function validateUpdateTel() {
     let check = telRegex.test(inputTel);
     if (!check) {
         $("#inputUpdateTel").css("border", 'solid red 2px');
+        $("#inputUpdateTelAlert").text("Invalid Phone number. Use Ex :- 0760000000 or +9400000000");
         return false;
     } else {
         $("#inputUpdateTel").css("border", 'solid green 2px');
+        $("#inputUpdateTelAlert").text("");
         return true;
     }
 }

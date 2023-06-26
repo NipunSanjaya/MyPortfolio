@@ -14,6 +14,8 @@ $("#log_in").click(function () {
     $("#login_section").css("display", 'none');
 });
 $("#home").click(function () {
+    setItemCount();
+    setCustomerCount();
     $("#home_section").css("display", 'block');
     $("#customer_section").css("display", 'none');
     $("#order_section").css("display", 'none');
@@ -28,13 +30,14 @@ $("#customer").click(function () {
 $("#order").click(function () {
     loadComboBox();
     setOrderId();
-    console.log(new Date())
     $("#home_section").css("display", 'none');
     $("#customer_section").css("display", 'none');
     $("#order_section").css("display", 'block');
     $("#store_section").css("display", 'none');
 });
 $("#store").click(function () {
+    $("#item-table-body").empty();
+    loadItems();
     $("#home_section").css("display", 'none');
     $("#customer_section").css("display", 'none');
     $("#order_section").css("display", 'none');
