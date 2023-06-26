@@ -1,5 +1,7 @@
 
-
+*{
+    font-family: Poppins, sans-serif; !important;
+}
 a {
     display: inline-block;
 }
@@ -41,7 +43,7 @@ header {
     box-shadow: 0 1px 2px 1px gray;
 }
 body {
-    font-family: Poppins, sans-serif;
+    font-family: Poppins, sans-serif; !important;
     background-color: rgb(53, 52, 52);
     font-size: 1.6rem;
     color: rgb(255, 255, 255);
