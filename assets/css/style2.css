@@ -382,7 +382,7 @@ header > nav > menu {
 }
 #box-1{
     position: absolute;
-    width: 894px;
+    width: 95%;
     height: 50px;
     left: 0px;
     top: 83px;
@@ -390,10 +390,10 @@ header > nav > menu {
 }
 #box-2{
     position: absolute;
-    width: 894px;
+    width: 95%;
     height: 299px;
     left: 0px;
-    top: 198px;
+    top: 175px;
 }
 #box-2>p{
     line-height: 30px;
@@ -405,7 +405,7 @@ header > nav > menu {
     width: 144px;
     height: 65px;
     left: 0px;
-    top: 532px;
+    top: 543px;
 
     background: #DF224F;
     border: 1px solid #000000;
@@ -425,7 +425,7 @@ header > nav > menu {
     width: 237px;
     height: 65px;
     left: 243px;
-    top: 532px;
+    top: 543px;
 
     background: #DF224F;
     border: 1px solid #000000;
@@ -444,7 +444,7 @@ header > nav > menu {
     width: 1350px;
     height: 880px;
     left: 0px;
-    top: 1245px;
+    top: 1252px;
 
     background: #2E2D32;
 }
