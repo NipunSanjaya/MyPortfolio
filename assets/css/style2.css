@@ -146,8 +146,8 @@ header > nav > menu {
 #home_section> aside> div{
     /*position: absolute;*/
     width: 1350px;
-    height: 610px;
-    background: url("../../assets/img/portfolio/coding img.jpg") center center / cover no-repeat fixed;
+    height: 630px;!important;
+    background: url("../../assets/img/portfolio/coding_background.jpg") center center / cover no-repeat fixed;
     /*background-position: center 0px;*/
     opacity: 85%;
     /*z-index: 0;*/
@@ -284,9 +284,9 @@ header > nav > menu {
 #about_section{
     position: absolute;
     width: 1350px;
-    height: 600px;
+    height: 615px;
     left: 0px;
-    top: 611px;
+    top: 640px;
 
     background: #2E2D32;
 }
@@ -444,7 +444,7 @@ header > nav > menu {
     width: 1350px;
     height: 880px;
     left: 0px;
-    top: 1211px;
+    top: 1245px;
 
     background: #2E2D32;
 }
@@ -602,7 +602,7 @@ header > nav > menu {
     width: 138px;
     height: 50px;
     left: 40px;
-    top: 65px;
+    top: 40px;
     text-align: center;
 
     background: #DF224F;
@@ -618,7 +618,7 @@ header > nav > menu {
     width: 420px;
     height: 29px;
     left: 40px;
-    top: 120px;
+    top: 100px;
 
     /*font-family: 'Inter';*/
     font-style: normal;
@@ -635,7 +635,7 @@ header > nav > menu {
     width: 450px;
     height: 22px;
     left: 40px;
-    top: 160px;
+    top: 135px;
 
     /*font-family: 'Inter';*/
     font-style: normal;
@@ -649,10 +649,10 @@ header > nav > menu {
 }
 #res-box1-para{
     position: absolute;
-    width: 426px;
+    width: 525px;
     height: 72px;
     left: 40px;
-    top: 250px;
+    top: 207px;
 
     /*font-family: 'Inter';*/
     font-style: normal;
@@ -668,7 +668,7 @@ header > nav > menu {
     width: 138px;
     height: 50px;
     left: 40px;
-    top: 65px;
+    top: 40px;
     text-align: center;
 
     background: #DF224F;
@@ -684,7 +684,7 @@ header > nav > menu {
     width: 450px;
     height: 29px;
     left: 40px;
-    top: 120px;
+    top: 100px;
 
     /*font-family: 'Inter';*/
     font-style: normal;
@@ -698,10 +698,10 @@ header > nav > menu {
 }
 #res-box2-title-2{
     position: absolute;
-    width: 450px;
+    width: 480px;
     height: 22px;
     left: 40px;
-    top: 160px;
+    top: 135px;
 
     /*font-family: 'Inter';*/
     font-style: normal;
@@ -715,10 +715,10 @@ header > nav > menu {
 }
 #res-box2-para{
     position: absolute;
-    width: 426px;
+    width: 525px;
     height: 72px;
     left: 40px;
-    top: 250px;
+    top: 207px;
 
     /*font-family: 'Inter';*/
     font-style: normal;
@@ -735,7 +735,7 @@ header > nav > menu {
     top: 2970px;
     width: 1350px;
     /*opacity: 80%;*/
-    padding: 1500px 0px;
+    /*padding: 1500px 0px;*/
     background: url(../img/portfolio/cricles_background.jpg) center center / cover no-repeat fixed;
 }
 /*{box-sizing: border-box}*/
@@ -762,7 +762,7 @@ header > nav > menu {
     width: 1200px;
     height: 300px;
     left: 70px;
-    top: 3000px;
+    top: 37px;
 
 }
 .skill-name{
@@ -776,7 +776,7 @@ header > nav > menu {
     width: 1350px;
     height: 1300px;
     left: 0px;
-    top: 3655px;
+    /*top: 3655px;*/
     background: #2E2D32;
 }
 #latest-work>div:hover{
@@ -893,10 +893,11 @@ header > nav > menu {
     width: 300px;
 }
 #project-area-padding{
-    top: 2970px;
+    /*position: relative;*/
+    /*top: 3970px;*/
     width: 1350px;
     /*opacity: 80%;*/
-    padding: 840px 0px;
+    /*padding: 840px 0px;*/
     background: url(../../Assignments/css/img/project-bg.jpg) center center / cover no-repeat fixed;
 }
 #btn4:hover{
@@ -911,7 +912,8 @@ header > nav > menu {
     width: 1350px;
     height: 663px;
     left: 0px;
-    top: 4955px;
+    /*top: 600px;*/
+    /*top: 4955px;*/
 }
 #project-area>div{
     position: absolute;
@@ -938,7 +940,7 @@ header > nav > menu {
 #project-area>a{
     box-sizing: border-box;
     position: absolute;
-    width: 178px;
+    width: 187px;
     height: 65px;
     left: 50px;
     top: 495px;
@@ -959,8 +961,9 @@ header > nav > menu {
     width: 1350px;
     height: 1640px;
     left: 0px;
-    top: 5660px;
-    bbackground: #1E1E1E;
+    /*top: 5660px;*/
+    top: 5871px;
+    /*background: #1E1E1E;*/
 }
 #my-vlog-section>div{
     position: absolute;
@@ -981,7 +984,7 @@ header > nav > menu {
     position: absolute;
     top: 242px;
     left: 3%;
-    height: 184vh;
+    height: 149vh;
     width: 92%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -1068,7 +1071,7 @@ header > nav > menu {
     height: 663px;
     /*height: 910px;*/
     left: 0px;
-    top: 7280px;
+    top: 5980px;
 }
 #assignment_section>div:nth-child(1){
     position: relative;
@@ -1310,7 +1313,7 @@ header > nav > menu {
     width: 1350px;
     height: 663px;
     left: 0px;
-    top: 8088px;
+    top: 5980px;
 }
 #my-contact{
     position: relative;
@@ -1488,7 +1491,7 @@ input[type=submit]:hover {
     width: 1350px;
     height: 372px;
     left: 0px;
-    top: 8785px;
+    top: 6000px;
     /*top: 9774px;*/
 
     background: #000000;
@@ -1602,7 +1605,23 @@ input[type=submit]:hover {
     color: #0c63e4;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1900px) {
+
+    #home_section>section{
+        position: absolute;
+        top: 2%;
+        width: 100%;
+    }
+
+    #home_section>section>div:nth-child(1){
+        top: 0%;
+    }
+    #home_section>section>div:nth-child(1)>span{
+        position: relative;
+        top: 0;
+        /*bottom: 200%;*/
+    }
+
 
     #btn-nav {
         display: none;
@@ -1624,8 +1643,10 @@ input[type=submit]:hover {
     }
 
     #logo-pic {
-        width: 40px;
-        height: 40px;
+        width: 44px;
+        height: 44px;
+        transition: transform 2s;
+        cursor: pointer;
     }
 
     header > nav {
@@ -1634,34 +1655,38 @@ input[type=submit]:hover {
 
     #home_section > aside > div {
         width: 100%;
-        height: 561px;
+        height: 630px;
     }
     #autoTyping{
         position: relative;
         top: -446px;
     }
     .counts {
-        padding: 1176px 0px;
+        position: absolute;
+        padding: 363px 0px;
     }
     #latest-work {
-        position: absolute;
+        /*position: absolute;*/
         top: 3705px;
     }
     #project-area-padding {
-        padding: 955px 0px;
+        position: relative;
+        padding: 0px 0px;
+        height: 680px;
+        top: 4286px;
 
     }
     #assignment_section {
         position: relative;
-        top: 2373px;
+        /*top: 2373px;*/
     }
     #contact_section {
         position: relative;
-        top: 2423px;
+        /*top: 2423px;*/
     }
     .footer {
         position: relative;
-        top: 2526px;
+        /*top: 2526px;*/
     }
 }
 
@@ -1745,7 +1770,7 @@ input[type=submit]:hover {
         width: 50%;
         height: 72px;
         left: 535px;
-        top: 137px;
+        top: 100px;
     }
 
     #resume_section>div:nth-child(5) {
@@ -1759,11 +1784,11 @@ input[type=submit]:hover {
         width: 50%;
         height: 72px;
         left: 535px;
-        top: 129px;
+        top: 100px;
     }
 
     #skills {
-        top: 3037px;
+        /*top: 3037px;*/
     }
 
     header > nav > menu {

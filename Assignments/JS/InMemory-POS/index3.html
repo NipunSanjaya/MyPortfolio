@@ -6,17 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../../../assets/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="../../../assets/bootstrap/css/bootstrap.css">
-  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
 <header id="nav_bar">
   <nav class="navbar navbar-expand-lg bg-body-tertiary"
-       style="z-index: 1; background-color: #050505; height: 60px; box-shadow: 0px 1px 7px -4px black;">
+       style="z-index: 1; background-color: #000000; height: 60px; box-shadow: 0px 1px 7px -4px #232121;">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <a class="navbar-brand" href="#">
-<!--          <img src="" alt="" width="30" height="30"-->
-<!--               class="d-inline-block align-text-top">-->
           POS
         </a>
       </a>
@@ -29,20 +26,20 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#" id="home" style="color: white">Home</a>
+            <a class="nav-link active" aria-current="page" href="#" id="home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" id="order" style="color: white">Order</a>
+            <a class="nav-link" href="#" id="order">Order</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" id="customer" style="color: white">Customer</a>
+            <a class="nav-link" href="#" id="customer">Customer</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" id="store" style="color: white">Store</a>
+            <a class="nav-link" href="#" id="store">Store</a>
           </li>
         </ul>
         <span class="navbar-text">
-                <a class="nav-link" href="#" id="log_out" style="color: white"><i class="fa-solid fa-power-off fa-xl"></i>Log Out</a>
+                <a class="nav-link" href="#" id="log_out"><i class="fa-solid fa-power-off fa-xl"></i>Log Out</a>
             </span>
       </div>
     </div>
@@ -50,7 +47,7 @@
 </header><!--navbar-->
 <section id="login_section">
   <div class="position-absolute start-0 end-0 top-0 bottom-0 m-auto row justify-content-center align-content-center text-center">
-    <section class="row w-50 h-50 shadow-lg" style="border-radius: 40px; background-color: bisque">
+    <section class="row w-50 h-50 shadow-lg" style="border-radius: 40px">
       <div class="row align-items-start position-relative">
         <div class="row justify-content-center m-auto position-absolute start-0 end-0 top-0 bottom-0">
           <h1>Log In</h1>
@@ -80,32 +77,45 @@
   </div>
 </section>
 <section id="home_section">
-  <div class="container-fluid row position-absolute start-0 end-0 bottom-0 m-auto" style="top: 30%">
-    <section class="row justify-content-center align-content-center w-100 h-50">
-      <div class="col-6 d-flex h-100 align-content-center justify-content-center">
-        <div class="d-flex position-relative w-75 h-100 justify-content-center shadow-lg"
-             style="border-radius: 20px; background-color: white">
-          <div class="row mt-1 h-25 position-absolute m-auto start-0 mx-1 end-0 p-0"
-               style="background-color: #111111FF; border-radius: 20px">
-            <h1 class="d-flex justify-content-center align-content-center pt-2 p-0" style="color: white">Customers</h1>
-          </div><!--title-->
-          <div class="row h-25 w-100 d-flex start-0 end-0 m-auto">
-            <h1 class="p-0 d-flex justify-content-center align-content-end" style="font-size: 100px">
-              <span>126</span></h1>
-          </div><!--total-->
+  <div class="container-fluid row position-absolute start-0 end-0 bottom-0 m-auto" style="top: 60px">
+    <section class="row align-content-center justify-content-center">
+      <div class="col-12 col-sm-5 col-lg-4 col-xl-3 shadow-lg"
+           style="height: 200px; border-radius: 30px;">
+        <div class="row text-center align-content-center">
+          <div class="col-1"></div>
+          <div class="col-10">
+            <div class="row">
+              <div class="col-12" style="border-bottom: 2px solid black; height: 50px">
+                <h1>Customers</h1>
+              </div>
+              <div class="col-12" style="height: 150px;">
+                <div class="row h-75 text-center justify-content-center align-content-center">
+                  <h1 class="display-1"><span id="customer-count">0</span></h1>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-1"></div>
         </div>
       </div>
-      <div class="col-6 d-flex h-100 align-content-center justify-content-center">
-        <div class="d-flex position-relative w-75 h-100 justify-content-center shadow-lg"
-             style="border-radius: 20px; background-color: white">
-          <div class="row mt-1 h-25 position-absolute m-auto start-0 mx-1 end-0 p-0"
-               style="background-color: #111111; border-radius: 20px">
-            <h1 class="d-flex justify-content-center align-content-center pt-2 p-0" style="color: white">Items</h1>
-          </div><!--title-->
-          <div class="row h-25 w-100 d-flex start-0 end-0 m-auto">
-            <h1 class="p-0 d-flex justify-content-center align-content-end" style="font-size: 100px">
-              <span>632</span></h1>
-          </div><!--total-->
+      <div class="col-12 col-sm-2" style="height: 50px;"></div>
+      <div class="col-12 col-sm-5 col-lg-4 col-xl-3 shadow-lg"
+           style="height: 200px; border-radius: 30px;">
+        <div class="row text-center align-content-center">
+          <div class="col-1"></div>
+          <div class="col-10">
+            <div class="row">
+              <div class="col-12" style="border-bottom: 2px solid black; height: 50px">
+                <h1>Items</h1>
+              </div>
+              <div class="col-12" style="height: 150px;">
+                <div class="row h-75 text-center justify-content-center align-content-center">
+                  <h1 class="display-1"><span id="item-count">0</span></h1>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-1"></div>
         </div>
       </div>
     </section>
@@ -118,7 +128,7 @@
       <div class="col-10">
         <div class="shadow row  text-center justify-content-center align-items-center"
              style="background-color: white; border-radius: 30px">
-          <div class="col-12 col-sm-12 col-lg-8">
+          <div class="col-sm-12 col-md-8">
             <nav class="navbar justify-content-center">
               <form class="d-flex flex-column flex-sm-row ubFt" role="search">
                 <input id="searchBar" class="form-control me-1" style="width: 250px" type="search"
@@ -134,7 +144,7 @@
               </form>
             </nav>
           </div><!--search bar-->
-          <div class="col-4 col-sm-3 col-lg">
+          <div class="col-sm-12 col-md-4">
             <nav class="navbar justify-content-center">
               <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                       data-bs-target="#newCustomer">
@@ -145,7 +155,7 @@
                  tabindex="-1" aria-labelledby="newCustomerLabel" aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
-                  <div class="modal-header" style="background-color: #ff0000; color: white">
+                  <div class="modal-header" style="background-color: #000000; color: white">
                     <h1 class="modal-title fs-5" id="newCustomerLabel">New Customer</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                             aria-label="Close"></button>
@@ -153,22 +163,30 @@
                   <div class="modal-body">
                     <form class="row g-3 text-start">
                       <div class="col-12">
-                        <label for="inputAddress" class="form-label">NIC</label>
+                        <label for="inputNIC" class="form-label">NIC</label>
                         <input type="text" class="form-control" id="inputNIC" placeholder="NIC">
+                        <p id="inputNICAlert" class="m-0"
+                           style="font-size: 10px; color: red"></p>
                       </div>
                       <div class="col-12">
-                        <label for="inputAddress" class="form-label">Name</label>
+                        <label for="inputName" class="form-label">Name</label>
                         <input type="text" class="form-control" id="inputName"
                                placeholder="Name">
+                        <p id="inputNameAlert" class="m-0"
+                           style="font-size: 10px; color: red"></p>
                       </div>
                       <div class="col-12">
-                        <label for="inputAddress" class="form-label">Tel</label>
+                        <label for="inputTel" class="form-label">Tel</label>
                         <input type="text" class="form-control" id="inputTel" placeholder="Tel">
+                        <p id="inputTelAlert" class="m-0"
+                           style="font-size: 10px; color: red"></p>
                       </div>
                       <div class="col-12">
                         <label for="inputAddress" class="form-label">Address</label>
                         <input type="text" class="form-control" id="inputAddress"
                                placeholder="Address">
+                        <p id="inputAddressAlert" class="m-0"
+                           style="font-size: 10px; color: red"></p>
                       </div>
                     </form><!--customer form-->
                   </div>
@@ -184,7 +202,7 @@
               </div>
             </div><!--modal-->
           </div><!--button new-->
-          <div class="col-4 col-sm-3 col-lg">
+          <div class="">
             <!--                        <nav class="navbar justify-content-center">-->
             <!--                            <button id="updateCustomerbtn" type="button" class="btn btn-success" data-bs-toggle="modal"-->
             <!--                                    data-bs-target="#updateCustomer">Update-->
@@ -194,7 +212,7 @@
                  tabindex="-1" aria-labelledby="updateCustomerLabel" aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
-                  <div class="modal-header" style="background-color: #FF0000FF; color: white">
+                  <div class="modal-header" style="background-color: #000000; color: white">
                     <h1 class="modal-title fs-5" id="updateCustomerLabel">Update Customer</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                             aria-label="Close"></button>
@@ -210,16 +228,22 @@
                         <label for="inputUpdateName" class="form-label">Name</label>
                         <input type="text" class="form-control" id="inputUpdateName"
                                placeholder="Name">
+                        <p id="inputUpdateNameAlert" class="m-0"
+                           style="font-size: 10px; color: red"></p>
                       </div>
                       <div class="col-12">
                         <label for="inputUpdateTel" class="form-label">Tel</label>
                         <input type="text" class="form-control" id="inputUpdateTel"
                                placeholder="Tel">
+                        <p id="inputUpdateTelAlert" class="m-0"
+                           style="font-size: 10px; color: red"></p>
                       </div>
                       <div class="col-12">
                         <label for="inputUpdateAddress" class="form-label">Address</label>
                         <input type="text" class="form-control" id="inputUpdateAddress"
                                placeholder="Address">
+                        <p id="inputUpdateAddressAlert" class="m-0"
+                           style="font-size: 10px; color: red"></p>
                       </div>
                     </form><!--customer form-->
                   </div>
@@ -280,6 +304,8 @@
           <div class="col-6">
             <label for="orderId" class="form-label">Order ID :</label>
             <input class="form-control" id="orderId" type="text">
+            <p id="orderIdAlert" class="m-0"
+               style="font-size: 10px; color: red"></p>
           </div>
           <div class="col-6">
             <label for="orderDate" class="form-label">Order Date :</label>
@@ -338,35 +364,52 @@
           <div class="col">
             <label for="Quantity" class="form-label">Quantity</label>
             <input class="form-control" id="Quantity" type="text">
+            <p id="QuantityAlert" class="m-0"
+               style="font-size: 10px; color: red"></p>
           </div>
         </div>
-      </div><!--customer-->
+      </div><!--item-->
       <div class="col-12 col-lg-5 col-xl-4 mt-4">
         <div class="row justify-content-center pt-2 pb-2 bg-white shadow"
              style="border-radius:20px; height: max-content;">
           <div class="row justify-content-center">
             <div class="row mt-1">
-              <div class="col-5">
-                <h1 class="text-danger">Total :</h1>
+              <div  class="row">
+                <div class="col-5">
+                  <h3 class="text-danger">Total :</h3>
+                </div>
+                <div class="col">
+                  <h3>Rs.<span id="total"> 0.0</span></h3>
+                </div>
+                <div class="col-5">
+                  <h3 class="text-danger">SubTotal :</h3>
+                </div>
+                <div class="col">
+                  <h3>Rs.<span id="subTotal"> 0.0</span></h3>
+                </div>
               </div>
-              <div class="col">
-                <h1>Rs.<span>00.00</span></h1>
-              </div>
+
             </div>
             <div class="row mt-1">
               <div class="col-6">
                 <label for="cash" class="form-label">Cash (Rs.)</label>
                 <input class="form-control" id="cash" type="text">
+                <p id="cashAlert" class="m-0"
+                   style="font-size: 10px; color: red"></p>
               </div>
               <div class="col-6">
                 <label for="discount" class="form-label">Discount</label>
-                <input class="form-control" id="discount" type="number">
+                <input class="form-control" id="discount" type="number" placeholder="0">
+                <p id="discountAlert" class="m-0"
+                   style="font-size: 10px; color: red"></p>
               </div>
             </div>
             <div class="row mt-1">
               <div class="col">
                 <label for="balance" class="form-label">Balance</label>
                 <input class="form-control" disabled id="balance" type="text">
+                <p id="balanceAlert" class="m-0"
+                   style="font-size: 10px; color: red"></p>
               </div>
             </div>
           </div>
@@ -382,7 +425,7 @@
                 </button>
               </div>
               <div class="col-6 mt-4">
-                <button style="border-radius: 10px; color:#000;" type="button"
+                <button id="place-order" style="border-radius: 10px; color:#000;" type="button"
                         class="btn shadow-lg w-100 btn-primary">
                   <i class="fa-solid fa-file-invoice"></i>
                   Place Order
@@ -420,7 +463,7 @@
       <div class="col-10">
         <div class="shadow row  text-center justify-content-center align-items-center"
              style="background-color: white; border-radius: 30px">
-          <div class="col-12 col-sm-12 col-lg-8">
+          <div class="col-sm-12 col-md-8">
             <nav class="navbar justify-content-center">
               <form class="d-flex flex-column flex-sm-row ubFt" role="search">
                 <input id="itemSearchBar" class="form-control me-1" style="width: 250px" type="search"
@@ -433,7 +476,7 @@
               </form><!--form-->
             </nav>
           </div><!--search bar-->
-          <div class="col-4 col-sm-3 col-lg">
+          <div class="col-sm-12 col-md-4">
             <nav class="navbar justify-content-center">
               <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                       data-bs-target="#newItem">Add
@@ -443,7 +486,7 @@
                  tabindex="-1" aria-labelledby="newItemLabel" aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
-                  <div class="modal-header" style="background-color: #FF0000FF; color: white">
+                  <div class="modal-header" style="background-color: #006aff; color: white">
                     <h1 class="modal-title fs-5" id="newItemLabel">New Item</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                             aria-label="Close"></button>
@@ -454,23 +497,31 @@
                         <label for="inputItemCode" class="form-label">Item Code</label>
                         <input type="text" class="form-control" id="inputItemCode"
                                placeholder="Input Item Code">
+                        <p id="inputItemCodeAlert" class="m-0"
+                           style="font-size: 10px; color: red"></p>
                       </div>
                       <div class="col-12">
                         <label for="inputItemName" class="form-label">Item Name</label>
                         <input type="text" class="form-control" id="inputItemName"
                                placeholder="Input Item Name">
+                        <p id="inputItemNameAlert" class="m-0"
+                           style="font-size: 10px; color: red"></p>
                       </div>
                       <div class="col-12">
                         <label for="inputItemPrice" class="form-label">Item Price</label>
                         <input type="text" class="form-control" id="inputItemPrice"
                                placeholder="Input Item Price">
+                        <p id="inputItemPriceAlert" class="m-0"
+                           style="font-size: 10px; color: red"></p>
                       </div>
                       <div class="col-12">
                         <label for="inputItemQuantity" class="form-label">Item Quantity</label>
                         <input type="text" class="form-control" id="inputItemQuantity"
                                placeholder="Input Item Quantity">
+                        <p id="inputItemQTYAlert" class="m-0"
+                           style="font-size: 10px; color: red"></p>
                       </div>
-                    </form><!--customer form-->
+                    </form><!--Item form-->
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close
@@ -483,17 +534,19 @@
               </div>
             </div><!--modal-->
           </div><!--button new-->
-          <div class="col-4 col-sm-3 col-lg">
-            <nav class="navbar justify-content-center">
-              <button type="button" class="btn btn-success" data-bs-toggle="modal"
-                      data-bs-target="#updateItem">Update
-              </button>
-            </nav>
+          <div class="">
+            <!--
+                                    <nav class="navbar justify-content-center">
+                                        <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                                data-bs-target="#updateItem">Update
+                                        </button>
+                                    </nav>
+            -->
             <div class="modal fade" id="updateItem" data-bs-backdrop="static" data-bs-keyboard="false"
                  tabindex="-1" aria-labelledby="newItemLabel" aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
-                  <div class="modal-header" style="background-color: #FF0000FF; color: white">
+                  <div class="modal-header" style="background-color: #006aff; color: white">
                     <h1 class="modal-title fs-5" id="updateItemLabel">Update Item</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                             aria-label="Close"></button>
@@ -509,17 +562,23 @@
                         <label for="inputUpdateItemName" class="form-label">Item Name</label>
                         <input type="text" class="form-control" id="inputUpdateItemName"
                                placeholder="Input Item Name">
+                        <p id="inputUpdateItemNameAlert" class="m-0"
+                           style="font-size: 10px; color: red"></p>
                       </div>
                       <div class="col-12">
                         <label for="inputUpdateItemPrice" class="form-label">Item Price</label>
                         <input type="text" class="form-control" id="inputUpdateItemPrice"
                                placeholder="Input Item Price">
+                        <p id="inputUpdateItemPriceAlert" class="m-0"
+                           style="font-size: 10px; color: red"></p>
                       </div>
                       <div class="col-12">
                         <label for="inputUpdateItemQuantity" class="form-label">Item
                           Quantity</label>
                         <input type="text" class="form-control" id="inputUpdateItemQuantity"
                                placeholder="Input Item Quantity">
+                        <p id="inputUpdateItemQTYAlert" class="m-0"
+                           style="font-size: 10px; color: red"></p>
                       </div>
                     </form><!--customer form-->
                   </div><!--body-->
@@ -534,11 +593,13 @@
               </div>
             </div><!--modal-->
           </div><!--button update-->
-          <div class="col-4 col-sm-3 col-lg">
-            <nav class="navbar justify-content-center">
-              <button type="button" class="btn btn-danger" id="deleteItem">Delete</button>
-            </nav>
-          </div><!--button delete-->
+          <!--
+                              <div class="col-4 col-sm-3 col-lg">
+                                  <nav class="navbar justify-content-center">
+                                      <button type="button" class="btn btn-danger" id="deleteItem">Delete</button>
+                                  </nav>
+                              </div>&lt;!&ndash;button delete&ndash;&gt;
+          -->
         </div>
         <div class="col-12" style="height: 25px"></div>
         <div class="row text-center justify-content-center align-content-center shadow-lg"
@@ -562,7 +623,7 @@
       <div class="col"></div>
     </section><!--search bar and buttons-->
   </div><!--body-->
-</section><!--store-->
+</section><!--item-->
 <script src="../../../assets/bootstrap/js/bootstrap.js"></script>
 <script src="assets/js/jquery-3.7.0.min.js"></script>
 <script src="models/customer.js"></script>
